@@ -1,4 +1,3 @@
-@import "vars";
 html {
     box-sizing: border-box;
 }
@@ -153,16 +152,6 @@ body {
 }
 
 //MENU START  
-
-  //colors
-$ngwhite : #f5f5f5;
-$ngred : #F80BFD;
-$ngblue : #F80BFD;
-$nggreen : #F80BFD;
-$ngblack : #111820;
-$nggrey: #a5a5a5;
-  
-
   
 .close-button {
     cursor: pointer;
@@ -179,7 +168,7 @@ $nggrey: #a5a5a5;
 .hamburger-menu:after,
 .hamburger-menu:before {
     width: 30px;
-    height: 4px;
+    height: 3px;
     z-index: 4;
 }
 
@@ -198,7 +187,7 @@ $nggrey: #a5a5a5;
 	content: "";
 	position: absolute;
 	left: 0;
-	bottom: 10px;
+	bottom: 8px;
 	background: rgba(255, 255, 255, 1);
 	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -207,7 +196,7 @@ $nggrey: #a5a5a5;
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 11px;
+	top: 8px;
 	background: rgba(255, 255, 255, 1);
 	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
