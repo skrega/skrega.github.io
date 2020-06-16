@@ -629,6 +629,11 @@
    
 }
 @media (max-width: 460px){
+    .main__inner{
+        .button{
+            width: 100%;
+        }
+    }
     .information__link{
         flex-direction: column;
     }
