@@ -256,8 +256,10 @@
 .slider{
     &__img{
         height: 130px;
-        // width: 50%;
-        // margin: 0 auto;
+        display: inline-block;
+        max-width: 250px;
+        width: 100%;
+        margin: 0 auto;
     }
     &__title{
         margin-bottom: 5px;
@@ -315,8 +317,10 @@
     }
 }
 .slick-active{
-    box-shadow: 0px 2px 1px #000000, 0px 10px 20px rgba(255, 255, 255, 0.09);
     outline: none;
+    background: #010413;
+    box-shadow: 0px 2px 1px #000000, 0px 10px 20px rgba(255, 255, 255, 0.09);
+    z-index: 5;
 }
   
 .slick-track {
@@ -341,84 +345,97 @@
         display: inline-block;
     }
 }
-  
-.slick-snext,
-.slick-sprev {
-    display: block;
-    background: #161823;
-    box-shadow: 0px 2px 1px #000000;
-}
-  
+
+
 .slick-current {
     opacity: 1;
     position: relative;
     display: block;
     transform: translate3d(0, 0, 20px);
-    z-index: 2;
+    z-index: 5;
     width: 468px !important;
     .slider__img{
         position: relative;
-        display: flex;
-        justify-content: center;
-        &::before{
-            position: absolute;
-            content: "";
-            top: -44px;
-            right: auto;
-            left: auto;
-            max-width: 170px;
-            width: 100%;
-            height: 121px;
-            background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFFFFF 100%);
-            mix-blend-mode: screen;
-            box-shadow: 0px 0px 70px rgba(248, 11, 253, 0.15);
-            filter: blur(40px);
-            z-index: -4;
-        }
-        &::after{
-            content: "";
-            position: absolute;
-            top: -144px;
-            right: auto;
-            left: auto;
-            width: 343px;
-            height: 320px;
-            background: radial-gradient(50% 50% at 50% 50%, rgba(248,11,253,0.62) 0%, rgba(248,11,253,0.05) 100%);
-            mix-blend-mode: screen;
-            opacity: 0.31;
-            box-shadow: 0px 0px 70px rgba(248,11,253,0.15);
-            filter: blur(40px);
-            z-index: -3;
-        }
+        // &::before{
+        //     position: absolute;
+        //     content: "";
+        //     top: -44px;
+        //     right: auto;
+        //     left: auto;
+        //     max-width: 170px;
+        //     width: 100%;
+        //     height: 121px;
+        //     background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFFFFF 100%);
+        //     mix-blend-mode: screen;
+        //     box-shadow: 0px 0px 70px rgba(248, 11, 253, 0.15);
+        //     filter: blur(40px);
+        //     z-index: -4;
+        // }
+        // &::after{
+        //     content: "";
+        //     position: absolute;
+        //     top: -144px;
+        //     right: auto;
+        //     left: auto;
+        //     width: 343px;
+        //     height: 320px;
+        //     background: radial-gradient(50% 50% at 50% 50%, rgba(248,11,253,0.62) 0%, rgba(248,11,253,0.05) 100%);
+        //     mix-blend-mode: screen;
+        //     opacity: 0.31;
+        //     box-shadow: 0px 0px 70px rgba(248,11,253,0.15);
+        //     filter: blur(40px);
+        //     z-index: -3;
+        // }
         img{
             position: absolute;
-            width: 56%;
+            width: 100%;
             height: 200%;
             bottom: 0;
+            right: 0;
+            left: 0;
+        }
+       
+    }
+    .item-2{
+        img{
+            width: 100%;
+            height: 150%;
+        }
+    }
+    .item-3{
+        img{
+            width: 112%;
+            height: 140%;
+            left: 0;
         }
     }
 }
-  
+
 .slick-snext {
-    opacity: 0.5;
+    opacity: 1;
     transform: translate3d(115%, 0, 0px);
     z-index: 1;
     width: 336px !important;
+    display: block;
+    background: #161823;
+    box-shadow: 0px 2px 1px #000000;
 }
   
   .slick-sprev {
-    opacity: 0.5;
+    opacity: 1;
+    display: block;
+    background: #161823;
+    box-shadow: 0px 2px 1px #000000;
     transform: translate3d(-115%, 0, 0px);
     width: 336px !important;
     
 }
+
 .slider__item{
     text-align: center;
     display: block;
     width: 100%;
     padding: 0px 0 35px;
-    background: #010413;
-    box-shadow: 0px 2px 1px #000000, 0px 10px 20px rgba(255, 255, 255, 0.09);
     border-radius: 4px;
     outline: none;
     height: 242px;
@@ -669,6 +686,140 @@
     }
 }
 //team end
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+}
+//footer start
+
+.contacts{
+    background-image: url(../images/footer-bg.png);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner{
+        max-width: 606px;
+        width: 100%;
+        padding-top: 98px;
+        position: relative;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 54px;
+        text-transform: uppercase;
+    }
+    &__text{
+        font-size: 15px;
+        line-height: 219.8%;
+    }
+    .contact-form{
+        display: block;
+        width: 505px;
+        height: 600px;
+        padding-top: 41px;
+        margin-bottom: 0;
+        .form__title{
+            font-size: 37px;
+            line-height: 38px;
+        }
+        .form__text{
+            margin-bottom: 77px;
+        }
+        form{
+            padding: 0 102px;
+            .button{
+                margin-top: 51px;
+                border: none;
+                width: 75%;
+                svg{
+                   opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+.information__link{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+    a{
+        display: block;
+        padding-left: 35px;
+        position: relative;
+        font-family: 'OpenSans-Regular', sans-serif !important;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        text-transform: capitalize;
+        margin-bottom: 16px;
+        &::before{
+            position: absolute;
+            font-family: 'icomoon';
+            font-size: 15px;
+            left: 12px;
+            box-shadow: 0px 0px 20px #F80BFD, 0px 0px 17px rgba(#F80BFD, 0.2),  inset 0px 0px 15px rgba(#F80BFD, 0.4);
+        }
+    }
+}
+.information__link-social{
+    display: flex;
+    a{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.27);
+        padding: 0;
+        transition: all .3s;
+        margin-right: 46px;
+        &::before{
+            box-shadow: none;
+            font-size: 37px;
+            top: 25px;
+            left: 17px;
+            color: #0B0D18;
+            transition: all .3s;
+        } 
+        &:hover{
+            box-shadow: 0px 0px 20px #F80BFD, inset 0px 0px 2px #F80BFD;
+            background-color: #000000;
+            &::before{
+                color: #fff;
+            }
+        } 
+         
+    }
+    .icon-facebook{
+        &::before{
+            font-size: 57px;
+            top: 33px;
+            left: 8px;
+        }
+        
+    }  
+  
+    .footer__inner{
+        position: absolute;
+        max-width: 1147px;
+        width: 100%;
+        bottom: 0;
+    }  
+}
+
+
+
+//footer end
 //page portfolio start
 
 .page-portfolio{
@@ -755,12 +906,7 @@
 //footer start
 
 .footer{
-    &__inner{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 300;
-    }
+   
     &__logo{
         display: flex;
         align-items: center;
@@ -857,26 +1003,7 @@
         border: 3px solid #FEECFF;
     }
 }
-.information__link{
-    a{
-        display: block;
-        padding-left: 35px;
-        position: relative;
-        font-family: 'OpenSans-Regular', sans-serif !important;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 20px;
-        text-transform: capitalize;
-        margin-bottom: 16px;
-        &::before{
-            position: absolute;
-            font-family: 'icomoon';
-            font-size: 15px;
-            left: 12px;
-            box-shadow: 0px 0px 20px #F80BFD, 0px 0px 17px rgba(#F80BFD, 0.2),  inset 0px 0px 15px rgba(#F80BFD, 0.4);
-        }
-    }
-}
+
 .footer-mobile{
     padding-bottom: 10px;
     text-align: center;
