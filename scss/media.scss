@@ -762,6 +762,14 @@
             .button{
                 display: block;
                 width: 100%;
+                border: 3px solid #fff;
+                svg{
+                    display: none;
+                }
+                span{
+                    left: 38%;
+                    top: 16px;
+                }
                 
             }
         }
@@ -841,6 +849,19 @@
                 width: 57px;
             }
         }
+        .button{
+            border: 3px solid #fff;
+            border-radius: 9px;
+            width: 100%;
+           
+            svg{
+                display: none;
+            }
+            span{
+                left: 39%;
+                top: 15px;
+            }
+        }
     }
     .portfolio__title{
         margin-top: 57px;
@@ -856,12 +877,7 @@
         }
        
     }
-    // .main-btn{
-    //     width: 100%;
-    //     text-align: center;
-    //     margin-bottom: 43px;
-    // }
-   
+
     .slick-slide{
         width: 200px !important;
     }
@@ -974,6 +990,30 @@
     
 }
 @media (max-width: 390px){
+    .header{
+        .button{
+            span{
+                left: 33%;
+                top: 15px;
+            }
+        }
+    }
+    .contact-form{
+        .button{
+            display: block;
+            width: 100%;
+            border: 3px solid #fff;
+            svg{
+                display: none;
+            }
+            span{
+                left: 35%;
+            }
+            
+        }
+    }
+    
+   
     .slick-list {
         padding-top: 32% !important;
     }
