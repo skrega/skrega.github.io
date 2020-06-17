@@ -57,7 +57,7 @@ $(function(){
 	if (doFullpage > 1024) {
 		$('#fullpage').fullpage({
 			
-			anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+			anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivePage'],
 			easing: 'easeInOutCubic'
 		
 		});
@@ -167,15 +167,15 @@ $(function(){
 	angle: { 0: 90 },
 	radius: { 30: 45 },
 	count: 3,
-	children: {
-		shape: "circle",
-		radius: RADIUS,
-		scale: { 1: 0 },
-		fill: ["#F80BFD", "#F80BFD", "#F80BFD"],
-		duration: 2000,
-		easing: "quad.out",
-		
-	}
+		children: {
+			shape: "circle",
+			radius: RADIUS,
+			scale: { 1: 0 },
+			fill: ["#F80BFD", "#F80BFD", "#F80BFD"],
+			duration: 2000,
+			easing: "quad.out",
+			
+		}
 	});
 	var burst6 = new mojs.Burst({
 	parent: hamburger3,
@@ -285,20 +285,4 @@ $(function(){
 
 });
 
-$(function(){
-	//slider item-page start
-	$('.items').slick({
-		infinite: true,
-		speed: 300,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		adaptiveHeight: true,
-		arrow: true,
-		prevArrow: '<button type="button" class="slick-prev"><img src="images/slider-arrow.png" alt=""></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="images/slider-arrow.png" alt=""></button>',
-		fade: true,
-  		cssEase: 'linear'
-	});
-	//slider item-page end
-});
 
