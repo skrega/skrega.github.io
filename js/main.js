@@ -1,56 +1,64 @@
 
 $(function(){
-	//slider start
-	var rev = $('.slider__items');
-	rev.on('init', function(event, slick, currentSlide) {
- 	var cur = $(slick.$slides[slick.currentSlide]),
-    next = cur.next(),
-    prev = cur.prev();
-	prev.addClass('slick-sprev');
-	next.addClass('slick-snext');
-	cur.removeClass('slick-snext').removeClass('slick-sprev');
-	slick.$prev = prev;
-	slick.$next = next;
-	}).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-  	console.log('beforeChange');
-  	var cur = $(slick.$slides[nextSlide]);
-	console.log(slick.$prev, slick.$next);
-	slick.$prev.removeClass('slick-sprev');
-	slick.$next.removeClass('slick-snext');
-	next = cur.next(),
-		prev = cur.prev();
-		prev.prev();
-		prev.next();
-		prev.addClass('slick-sprev');
-		next.addClass('slick-snext');
-		slick.$prev = prev;
-		slick.$next = next;
-		cur.removeClass('slick-next').removeClass('slick-sprev');
-	});
 
-	rev.slick({
-		speed: 1000,
-		arrows: true,
-		dots: true,
-		focusOnSelect: true,
-		prevArrow: '<button type="button" class="slick-prev"><img src="images/slider-arrow.png" alt="">1</button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="images/slider-arrow.png" alt="">1</button>',
-		infinite: true,
-		centerMode: true,
-		slidesPerRow: 1,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		centerPadding: '0',
-		swipe: true,
-		customPaging: function(slider, i) {
-			return '';
+	$('.menu-wrapper').on('click', function() {
+		$('.hamburger-menu').toggleClass('animate');
+		$('.modal-menu').toggleClass('show');
+	})
+	
+	var mySwiper = new Swiper ('.swiper-container', {
+		// Optional parameters
+		effect: 'coverflow',
+		grabCursor: true,
+		centeredSlides: true,
+		slidesPerView: '2',
+		loop: true,
+		coverflowEffect: {
+		  rotate: 0,
+		  stretch: 0,
+		  depth: 500,
+		  modifier: 1,
+		  slideShadows : false,
+		},
+		pagination: {
+		  el: '.swiper-pagination',
+		  	clickable: true,
 		},
 		
-	});
-
+		// Navigation arrows
+		navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		},
+		breakpoints: {
+			// when window width is >= 320px
+			1150: {
+			  slidesPerView: 2,
+			  spaceBetween: 20
+			},
+			// 320: {
+			// 	slidesPerView: 0,
+			// 	cleanStyles: true
+			// },
+			
+		}
+		
+	  })
 	
 
-	//slider end
+	//slick slider
+
+	$('.slider-team').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: true,
+		prevArrow: '<button type="button" class="slick-prev"></button>',
+		nextArrow: '<button type="button" class="slick-next">next</button>'
+	});
+
+	//slick slider
 	//fullpage.js start
 
 	var doFullpage = document.documentElement.clientWidth;
@@ -58,19 +66,15 @@ $(function(){
 		$('#fullpage').fullpage({
 			
 			anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivePage'],
-			easing: 'easeInOutCubic'
+			easing: 'easeInOutCubic',
+			resetSliders: true,
+			scrollOverflow: true
 		
 		});
 	}
 
 	//fullpage.js end
 
-
-
-	$('.menu-wrapper').on('click', function() {
-		$('.hamburger-menu').toggleClass('animate');
-		$('.modal-menu').toggleClass('show');
-	})
 
 
 	//mojs start

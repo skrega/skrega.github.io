@@ -4,14 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Game Development</title>
- 
-	<link rel="stylesheet" href="libs/slick-slider/slick.css">
-	<link rel="stylesheet" href="libs/animate-css/animate.min.css">
-	<link rel="stylesheet" href="libs/fullpage/fullpage.css">
+    <link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
-    
 </head>
 <body>
     <section class="page-portfolio">
@@ -21,7 +16,7 @@
                     <img src="images/logo.png" alt="">
                 </a>
                 <div class="menu-wrapper">
-                    <div class="hamburger-menu" id="hamburger-one"></div>	  
+                    <div class="hamburger-menu"></div>	  
                     <div class="modal-menu">
                         <div class="menu__inner">
                             <a href="index.html" class="menuitem">portfolio</a>
@@ -36,23 +31,23 @@
             </div>
             <div class="portfolio__items">
                 <div class="portfolio__item item-1">
-                    <div class="portfolio__img">
+                    <a data-fancybox="gallary" href="javascript:;"  data-src="#item-first" class="portfolio__img">
                         <img src="images/content/motor_bike.png" alt="">
-                    </div>
+                    </a>
                     <div class="portfolio__item-title">
                         Captain metal
                     </div>
                     <div class="portfolio__item-text">
-                        There will be a short description here
+                        A 3d model of Captain Metal from the Sonic Universe spin-off comic. Pirate Plunder Panic.
                     </div>
-                    <a href="item-page--first.html" class="portfolio__item-link">
+                    <a data-fancybox="items"  href="javascript:;" data-src="#item-first" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
                 <div class="portfolio__item item-2">
-                    <div class="portfolio__img">
+                    <a data-fancybox="gallary" href="javascript:;" data-src="#item-second" class="portfolio__img">
                         <img src="images/content/gun.png" alt="">
-                    </div>
+                    </a>
                 
                     <div class="portfolio__item-title">
                         Captain metal
@@ -60,74 +55,73 @@
                     <div class="portfolio__item-text">
                         There will be a short description here
                     </div>
-                    <a href="item-page--second.html" class="portfolio__item-link">
+                    <a data-fancybox="items"   href="javascript:;" data-src="#item-second" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
                 <div class="portfolio__item item-3">
-                    <div class="portfolio__img">
+                    <a href="javascript:;" data-src="#item-three" data-fancybox="gallary" class="portfolio__img">
                         <img src="images/content/robot-mini.png" alt="">
-                    </div>
-                
+                    </a>
                     <div class="portfolio__item-title">
                         Captain metal
                     </div>
                     <div class="portfolio__item-text">
                         There will be a short description here
                     </div>
-                    <a href="item-page.html" class="portfolio__item-link">
+                    <a href="javascript:;" data-src="#item-three" data-fancybox="items" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
                 <div class="portfolio__item item-4">
-                    <div class="portfolio__img">
+                    <a href="javascript:;" data-src="#item-fourth" data-fancybox="gallary" class="portfolio__img">
                         <img src="images/content/mini-captain.png" alt="">
-                    </div>
+                    </a>
                 
                     <div class="portfolio__item-title">
                         Captain metal
                     </div>
                     <div class="portfolio__item-text">
-                        There will be a short description here
+                        TA 3d model of Captain Metal from the Sonic Universe spin-off comic. Pirate Plunder Panic.
                     </div>
-                    <a href="item-page--fourth.html" class="portfolio__item-link">
+                    <a href="javascript:;" data-src="#item-fourth" data-fancybox="items" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
-                <div class="portfolio__item item-5">
-                    <div class="portfolio__img">
+                <div href="#" class="portfolio__item item-5">
+                    <a href="javascript:;" data-src="#item-5" data-fancybox="gallary" href="#" class="portfolio__img">
                         <img src="images/content/hors.png" alt="">
-                    </div>
+                    </a>
                 
                     <div class="portfolio__item-title">
-                        Captain metal
+                        Carousel Horse
                     </div>
                     <div class="portfolio__item-text">
-                        There will be a short description here
+                        Part of the big self project “ Apocalyptic Amusement Park” which is still in progress.
                     </div>
-                    <a href="#" class="portfolio__item-link">
+                    <a href="javascript:;" data-src="#item-5" data-fancybox="items" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
                 <div class="portfolio__item item-6">
-                    <div class="portfolio__img">
+                    <a href="javascript:;" data-src="#item-6" data-fancybox="gallary" class="portfolio__img">
                         <img src="images/content/tank.png" alt="">
-                    </div>
+                    </a>
                 
                     <div class="portfolio__item-title">
-                        Captain metal
+                        BT-42
                     </div>
                     <div class="portfolio__item-text">
-                        There will be a short description here
+                        The Finnish BT-42 made in memory of world war II as a historical tragedy.
                     </div>
-                    <a href="#" class="portfolio__item-link">
+                    <a href="javascript:;" data-src="#item-6" data-fancybox="items" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
                 <div class="portfolio__item item-7">
-                    <div class="portfolio__img">
+                    <a href="javascript:;" data-src="#item-7" data-fancybox="gallary" class="portfolio__img">
                         <img src="images/content/motor_bike-2.png" alt="">
-                    </div>
+                    </a>
                 
                     <div class="portfolio__item-title">
                         Captain metal
@@ -135,14 +129,14 @@
                     <div class="portfolio__item-text">
                         There will be a short description here
                     </div>
-                    <a href="#" class="portfolio__item-link">
+                    <a href="javascript:;" data-src="#item-7" data-fancybox="items" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
                 <div class="portfolio__item item-8">
-                    <div class="portfolio__img">
+                    <a href="javascript:;" data-src="#item-8" data-fancybox="gallary" class="portfolio__img">
                         <img src="images/content/gun-2.png" alt="">
-                    </div>
+                    </a>
                 
                     <div class="portfolio__item-title">
                         Captain metal
@@ -150,59 +144,59 @@
                     <div class="portfolio__item-text">
                         There will be a short description here
                     </div>
-                    <a href="#" class="portfolio__item-link">
+                    <a href="javascript:;" data-src="#item-8" data-fancybox="items" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
                 <div class="portfolio__item item-9">
-                    <div class="portfolio__img">
+                    <a href="javascript:;" data-src="#item-9" data-fancybox="gallary" class="portfolio__img">
                         <img src="images/content/space-plain.png" alt="">
-                    </div>
+                    </a>
                 
                     <div class="portfolio__item-title">
-                        Captain metal
+                        Rick and Morty Space Ship
                     </div>
                     <div class="portfolio__item-text">
-                        There will be a short description here
+                        Focus of this work was on showing something from 2D cartoon world looks realistic.
                     </div>
-                    <a href="#" class="portfolio__item-link">
+                    <a  href="javascript:;" data-src="#item-9" data-fancybox="items" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
                 <div class="portfolio__item item-10">
-                    <div class="portfolio__img">
+                    <a href="javascript:;" data-src="#item-10" data-fancybox="gallary"  href="#" class="portfolio__img">
                         <img src="images/content/forest.png" alt="">
-                    </div>
+                    </a>
                 
                     <div class="portfolio__item-title">
-                        Captain metal
+                        Japanese Style Isometric Environment
                     </div>
                     <div class="portfolio__item-text">
-                        There will be a short description here
+                        Based on concept art by Erin Lin.
                     </div>
-                    <a href="#" class="portfolio__item-link">
+                    <a  href="javascript:;" data-src="#item-10" data-fancybox="items" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
                 <div class="portfolio__item item-11">
-                    <div class="portfolio__img">
+                    <a href="javascript:;" data-src="#item-11" data-fancybox="gallary"  href="#" class="portfolio__img">
                         <img src="images/content/statues.png" alt="">
-                    </div>
+                    </a>
                 
                     <div class="portfolio__item-title">
-                        Captain metal
+                        Angel
                     </div>
                     <div class="portfolio__item-text">
-                        There will be a short description here
+                        Sculpture from the top of Alexander Column from Saint Petersburg.
                     </div>
-                    <a href="#" class="portfolio__item-link">
+                    <a  href="javascript:;" data-src="#item-11" data-fancybox="items" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
                 <div class="portfolio__item item-12">
-                    <div class="portfolio__img">
+                    <a href="javascript:;" data-src="#item-12" data-fancybox="gallary"  class="portfolio__img">
                         <img src="images/content/highres.png" alt="">
-                    </div>
+                    </a>
                 
                     <div class="portfolio__item-title">
                         Captain metal
@@ -210,7 +204,7 @@
                     <div class="portfolio__item-text">
                         There will be a short description here
                     </div>
-                    <a href="#" class="portfolio__item-link">
+                    <a  href="javascript:;" data-src="#item-12" data-fancybox="items" class="portfolio__item-link">
                         Detailed
                     </a>
                 </div>
@@ -241,13 +235,158 @@
             </div>
         </div>
     </footer>
-
+   <div class="portfolio-details">
+        <div id="item-first" class="item-page item-first">
+			<div class="item">
+				<img class="item-img" src="images/motor_bike001.png" alt="">
+				<h3 class="item__title">
+					Motor bike 001
+				</h3>
+				<div class="item__text">
+					Augmented reality is used to enhance natural environments or situations and offer perceptually enriched experiences. With the help of advanced AR technologies (e.g. adding computer vision, incorporating AR cameras into smartphone applications and object recognition) the information about the surrounding real world of the user becomes interactive and digitally manipulated. Information about the environment and its objects is overlaid on the real world. 
+				</div>
+			</div>
+        </div>
+        <div id="item-second" class="item-page item-second" >
+            <div class="item ">
+                <img class="item-img" src="images/gun.png" alt="">
+                <h3 class="item__title">
+                    Gun 001
+                </h3>
+                <div class="item__text">
+                    Augmented reality is used to enhance natural environments or situations and offer perceptually enriched experiences. With the help of advanced AR technologies (e.g. adding computer vision, incorporating AR cameras into smartphone applications and object recognition) the information about the surrounding real world of the user becomes interactive and digitally manipulated. Information about the environment and its objects is overlaid on the real world. 
+                </div>
+            </div>
+        </div>
+        <div id="item-three" class="item-page">
+            <div class="item">
+                <img class="item-img" src="images/content/robot-big.png" alt="">
+                <h3 class="item__title">
+                    Lamp Bulb Robot
+                </h3>
+                <div class="item__text">
+                    Self project made for a poster to grab the attention of ecology problems. Sad old robot holding the last flower on the Earth.
+                </div>
+                <div class="item-software">
+                    <img src="images/content/about-1.png" alt="">
+                    <img src="images/content/item-2.png" alt="">
+                    <img src="images/content/image-1.png" alt="">
+                </div>
+                <div class="item__imgages">
+                    <img src="images/content/item__img-1.png" alt="">
+                    <img src="images/content/item__img-2.png" alt="">
+                    <img src="images/content/item__img-3.png" alt="">
+                    <img src="images/content/item__img-4.png" alt="">
+                    <img src="images/content/item__img-5.png" alt="">
+                    <img src="images/content/item__img-6.png" alt="">
+                    <img src="images/content/item__img-7.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="item-fourth" class="item-page item-four" >
+            <div class="item">
+                <img class="item-img" src="images/item-1.png" alt="">
+                <h3 class="item__title">
+					Captain Metal
+				</h3>
+				<div class="item__text">
+					Augmented reality is used to enhance natural environments or situations and offer perceptually enriched experiences. With the help of advanced AR technologies (e.g. adding computer vision, incorporating AR cameras into smartphone applications and object recognition) the information about the surrounding real world of the user becomes interactive and digitally manipulated. Information about the environment and its objects is overlaid on the real world. 
+				</div>
+            </div>
+        </div>
+        <div id="item-5" class="item-page data-item-5" >
+            <div class="item ">
+                <img class="item-img" src="images/hours.png" alt="">
+                <h3 class="item__title">
+                    Carousel Horse
+                </h3>
+                <div class="item__text">
+                    Part of the big self project “ Apocalyptic Amusement Park” which is still in progress.
+                </div>
+            </div>
+        </div>
+        <div id="item-6" class="item-page data-item-6" >
+            <div class="item ">
+                <img class="item-img" src="images/tank.png" alt="">
+                <h3 class="item__title">
+                    BT-42
+                </h3>
+                <div class="item__text">
+                    The Finnish BT-42 made in memory of world war II as a historical tragedy.
+                </div>
+            </div>
+        </div>
+        <div id="item-7" class="item-page data-item-7" >
+            <div class="item ">
+                <img class="item-img" src="images/content/motor_bike-2.png" alt="">
+                <h3 class="item__title">
+                    Motor bike 002
+                </h3>
+                <div class="item__text">
+                    Part of the big self project “ Apocalyptic Amusement Park” which is still in progress.
+                </div>
+            </div>
+        </div>
+        <div id="item-8" class="item-page data-item-8" >
+            <div class="item ">
+                <img class="item-img" src="images/gun.png" alt="">
+                <h3 class="item__title">
+                    Gun 001
+                </h3>
+                <div class="item__text">
+                    Augmented reality is used to enhance natural environments or situations and offer perceptually enriched experiences. With the help of advanced AR technologies (e.g. adding computer vision, incorporating AR cameras into smartphone applications and object recognition) the information about the surrounding real world of the user becomes interactive and digitally manipulated. Information about the environment and its objects is overlaid on the real world. 
+                </div>
+            </div>
+        </div>
+        <div id="item-9" class="item-page data-item-9" >
+            <div class="item ">
+                <img class="item-img" src="images/space.png" alt="">
+                <h3 class="item__title">
+                    Rick and Morty Space Ship
+                </h3>
+                <div class="item__text">
+                    Focus of this work was on showing something from 2D cartoon world looks realistic. 
+                </div>
+            </div>
+        </div>
+        <div id="item-10" class="item-page data-item-10" >
+            <div class="item ">
+                <img class="item-img" src="images/gun.png" alt="">
+                <h3 class="item__title">
+                    Gun 001
+                </h3>
+                <div class="item__text">
+                    Augmented reality is used to enhance natural environments or situations and offer perceptually enriched experiences. With the help of advanced AR technologies (e.g. adding computer vision, incorporating AR cameras into smartphone applications and object recognition) the information about the surrounding real world of the user becomes interactive and digitally manipulated. Information about the environment and its objects is overlaid on the real world. 
+                </div>
+            </div>
+        </div>
+        <div id="item-11" class="item-page data-item-11" >
+            <div class="item ">
+                <img class="item-img" src="images/gun.png" alt="">
+                <h3 class="item__title">
+                    Angel
+                </h3>
+                <div class="item__text">
+                    Sculpture from the top of Alexander Column from Saint Petersburg.
+                </div>
+            </div>
+        </div>
+        <div id="item-12" class="item-page data-item-12" >
+            <div class="item ">
+                <img class="item-img" src="images/Highres.png" alt="">
+                <h3 class="item__title">
+                    Gun 001
+                </h3>
+                <div class="item__text">
+                    Augmented reality is used to enhance natural environments or situations and offer perceptually enriched experiences. With the help of advanced AR technologies (e.g. adding computer vision, incorporating AR cameras into smartphone applications and object recognition) the information about the surrounding real world of the user becomes interactive and digitally manipulated. Information about the environment and its objects is overlaid on the real world. 
+                </div>
+            </div>
+        </div>
+    </div>
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
 	<script src="libs/fancybox-master/jquery.fancybox.min.js"></script>
-	<script src="libs/fullpage/easings.min.js"></script>
-	<script src="/libs/slick-slider/slick.min.js"></script>
-	<script src="libs/fullpage/fullpage.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
 </html>

@@ -8,12 +8,13 @@
 	<link rel="stylesheet" href="libs/slick-slider/slick.css">
 	<link rel="stylesheet" href="libs/animate-css/animate.min.css">
 	<link rel="stylesheet" href="libs/fullpage/fullpage.css">
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
-    
+   
 </head>
-<body>
+<body class="fp-responsive">
 	<div id="fullpage">
 		<header class="header section">
 			<div class="container">
@@ -23,18 +24,18 @@
 					</a>
 					<nav class="header__menu">
 						<ul class="menu__list">
-							<li><a href="#secondPage" data-anchor="secondPage">Portfolio</a></li>
+							<li><a href="page-portfolio.html" data-anchor="secondPage">Portfolio</a></li>
 							<li><a href="#thirdPage"  data-anchor="thirdPage">About us</a></li>
-							<li><a href="#">Contacts</a></li>
+							<li><a href="#fivePage">Contact</a></li>
 						</ul>
 					</nav>
 					<div class="menu-wrapper">
 						<div class="hamburger-menu" id="hamburger-one"></div>	  
 						<div class="modal-menu">
 							<div class="menu__inner">
-								<a href="#secondPage" data-anchor="secondPage" class="menuitem">portfolio</a>
+								<a href="page-portfolio.html" class="menuitem">portfolio</a>
 								<a href="#thirdPage"  data-anchor="thirdPage" class="menuitem">about us</a>
-								<a href="#" class="menuitem">contacts</a>
+								<a href="#fivePage" class="menuitem">contacts</a>
 							</div>
 						</div>  
 					</div>
@@ -69,9 +70,9 @@
 						<div class="hamburger-menu" id="hamburger-two"></div>	  
 						<div class="modal-menu">
 							<div class="menu__inner">
-								<a href="#secondPage" data-anchor="secondPage" class="menuitem">portfolio</a>
+								<a href="page-portfolio.html" class="menuitem">portfolio</a>
 								<a href="#thirdPage"  data-anchor="thirdPage" class="menuitem">about us</a>
-								<a href="#" class="menuitem">contacts</a>
+								<a href="#fivePage" class="menuitem">contacts</a>
 							</div>
 						</div>  
 					</div>
@@ -79,78 +80,94 @@
 				<div class="title portfolio__title">
 					portfolio
 				</div>
-				<div class="slider__items">
-					<div class="slider__item item-1">
-						<div class="slider__img">
-							<img src="images/item-1.png" alt="">
+				<div class="swiper-container adaptive">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide ">
+							<div class="slider-card slide-1">
+								<a data-fancybox href="javascript:;"  data-src="#item-fourth" class="slider__img">
+									<img src="images/item-1.png" alt="">
+								</a>
+								<div class="slider__title">
+									Captain metal
+								</div>
+								<div class="slider__text">
+									A 3d model of Captain Metal from the Sonic Universe spin-off comic. Pirate Plunder Panic.
+								</div>
+								<a data-fancybox href="javascript:;"  data-src="#item-fourth" class="slider__link">
+									Detailed
+								</a>
+							</div>
 						</div>
-					
-						<div class="slider__title">
-							Captain metal
+						<div class="swiper-slide ">
+							<div class="slider-card slide-2">
+								<a data-fancybox href="javascript:;"  data-src="#item-first" class="slider__img">
+									<img src="images/motor_bike001.png" alt="" >
+								</a>
+								<div class="slider__title">
+									Motor bike 001
+								</div>
+								<div class="slider__text">
+									There will be a short description here
+								</div>
+								<a data-fancybox href="javascript:;"  data-src="#item-first" class="slider__link">
+									Detailed
+								</a>
+							</div>							
 						</div>
-						<div class="slider__text">
-							There will be a short description here
+						<div class="swiper-slide ">
+							<div class="slider-card slide-3">
+								<a data-fancybox href="javascript:;" data-src="#item-second" href="#" class="slider__img">
+									<img src="images/gun-big.png" alt="">
+								</a>
+								<div class="slider__title">
+									Gun 001
+								</div>
+								<div class="slider__text">
+									There will be a short description here
+								</div>
+								<a data-fancybox href="javascript:;" data-src="#item-second" class="slider__link">
+									Detailed
+								</a>
+							</div>
 						</div>
-						<a href="item-page--fourth.html" class="slider__link">
-							Detailed
-						</a>
+						<div class="swiper-slide ">
+							<div class="slider-card slide-4">
+								<a href="javascript:;" data-src="#item-6" data-fancybox class="slider__img">
+									<img src="images/tank.png" alt="">
+								</a>
+								<div class="slider__title">
+									BT-42
+								</div>
+								<div class="slider__text">
+									The Finnish BT-42 made in memory of world war II as a historical tragedy.
+								</div>
+								<a href="javascript:;" data-src="#item-6" data-fancybox class="slider__link">
+									Detailed
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide ">
+							<div class="slider-card slide-5">
+								<a href="javascript:;" data-src="#item-three" data-fancybox class="slider__img">
+									<img src="images/content/robot-big.png" alt="">
+								</a>
+								<div class="slider__title">
+									Lamp Bulb Robot
+								</div>
+								<div class="slider__text">
+									Self project made for a poster to grab the attention of ecology problems. Sad old robot holding the last flower on the Earth.
+								</div>
+								<a href="javascript:;" data-src="#item-three" data-fancybox class="slider__link">
+									Detailed
+								</a>
+							</div>
+							
+						</div>
+	
 					</div>
-					<div class="slider__item item-2">
-						<div class="slider__img">
-							<img src="images/content/motor_bike.png" alt="" >
-						</div>
-						<div class="slider__title">
-							Motor bike 001
-						</div>
-						<div class="slider__text">
-							There will be a short description here
-						</div>
-						<a href="#" class="slider__link">
-							Detailed
-						</a>
-					</div>
-					<div class="slider__item item-3">
-						<div class="slider__img">
-							<img src="images/content/gun.png" alt="">
-						</div>
-						<div class="slider__title">
-							Gun 001
-						</div>
-						<div class="slider__text">
-							There will be a short description here
-						</div>
-						<a href="#" class="slider__link">
-							Detailed
-						</a>
-					</div>
-					<div class="slider__item item-4">
-						<div class="slider__img">
-							<img src="images/content/tank.png" alt="">
-						</div>
-						<div class="slider__title">
-							Gun 001
-						</div>
-						<div class="slider__text">
-							There will be a short description here
-						</div>
-						<a href="#" class="slider__link">
-							Detailed
-						</a>
-					</div>
-					<div class="slider__item item-5">
-						<div class="slider__img">
-							<img src="images/content/motor_bike-2.png" alt="">
-						</div>
-						<div class="slider__title">
-							Motor bike 002
-						</div>
-						<div class="slider__text">
-							There will be a short description here
-						</div>
-						<a href="#" class="slider__link">
-							Detailed
-						</a>
-					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>
 				<a href="page-portfolio.html" class="portfolio__link link">see all</a>
 				<a href="#thirdPage"  data-anchor="thirdPage" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow"><img src="images/arrows.png" alt=""></a>
@@ -166,9 +183,9 @@
 						<div class="hamburger-menu" id="hamburger-three"></div>	  
 						<div class="modal-menu">
 							<div class="menu__inner">
-								<a href="#secondPage" data-anchor="secondPage" class="menuitem">portfolio</a>
+								<a href="page-portfolio.html" class="menuitem">portfolio</a>
 								<a href="#thirdPage"  data-anchor="thirdPage" class="menuitem">about us</a>
-								<a href="#" class="menuitem">contacts</a>
+								<a href="#fivePage" class="menuitem">contacts</a>
 							</div>
 						</div>  
 					</div>
@@ -240,9 +257,9 @@
 						<div class="hamburger-menu" id="hamburger-fourth"></div>	  
 						<div class="modal-menu">
 							<div class="menu__inner">
-								<a href="#" class="menuitem">portfolio</a>
-								<a href="#" class="menuitem">about us</a>
-								<a href="#" class="menuitem">contacts</a>
+								<a href="page-portfolio.html" class="menuitem">portfolio</a>
+								<a href="#thirdPage"  data-anchor="thirdPage" class="menuitem">about us</a>
+								<a href="#fivePage" class="menuitem">contacts</a>
 							</div>
 						</div>  
 					</div>
@@ -250,28 +267,77 @@
 				<div class="title team__title">
 					our team
 				</div>
-				<div class="team__inner">
-					<div class="team__user">
-						<img src="images/user-1.jpg" alt="">
+				<div class="slider-team">
+					<div class="team__inner">
+						<div class="team__user">
+							<img src="images/user-1.jpg" alt="">
+						</div>
+						<div class="team__info">
+							<div class="team__name">
+								Elizabeth Denisyuk
+							</div>
+							<div class="team__profession">
+								Game Designer
+							</div>
+							<div class="team__text">
+								Game Designer Focused on organic modeling and 3D 
+								realistic sculptures. Has props modeling and 
+								texturing experience. Specialization with studied 
+								architecture and has a fine arts background.
+							</div>
+						</div>
 					</div>
-					<div class="team__info">
-						<div class="team__name">
-							Elizabeth Denisyuk
+					<div class="team__inner">
+						<div class="team__user">
+							<img src="images/user-2.jpg" alt="">
 						</div>
-						<div class="team__profession">
-							Game Designer
+						<div class="team__info">
+							<div class="team__name">
+								Daniel Londono 
+							</div>
+							<div class="team__profession">
+								3D and 2D character artist 
+							</div>
+							<div class="team__text">
+								Focused on game ready hair and xgen. Able to create a concept, storyboard, and color board. Has video editing knowledge, ui/ux design, and a graphic design background.
+							</div>
 						</div>
-						<div class="team__text">
-							Game Designer Focused on organic modeling and 3D 
-							realistic sculptures. Has props modeling and 
-							texturing experience. Specialization with studied 
-							architecture and has a fine arts background.
+					</div>
+					<div class="team__inner">
+						<div class="team__user">
+							<img src="images/user-3.jpg" alt="">
 						</div>
-						<a href="team-page.html" class="team__link link">next</a>
+						<div class="team__info">
+							<div class="team__name">
+								Oleksandra Plaksina 
+							</div>
+							<div class="team__profession">
+								3D Environment artist
+							</div>
+							<div class="team__text">
+								Specializing in the cinematic realism style, hard surface/organic modeling, and PBR texturing. Also has knowledge making casual and hidden object games.
+							</div>
+						</div>
+					</div>
+					<div class="team__inner">
+						<div class="team__user">
+							<img src="images/user-4.jpeg" alt="">
+						</div>
+						<div class="team__info">
+							<div class="team__name">
+								DeAundre Hodges
+							</div>
+							<div class="team__profession">
+								3D Character Artist
+							</div>
+							<div class="team__text">
+								3D Character Artist with a focus on stylized character models with a cartoon style/look. Also, hard surface props. Has Experience working in unreal engine 4, Adobe After Effects and creating video edits.
+							</div>
+						</div>
 					</div>
 				</div>
-				<a href="#fivePage" data-anchor="fivePage" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow" data-anchor="slide2"><img src="images/arrows.png" alt=""></a>
 			</div>
+			<a href="#fivePage" data-anchor="fivePage" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow" data-anchor="slide2"><img src="images/arrows.png" alt=""></a>
 		</section>
 		<footer class="contacts section">
 			<div class="container">
@@ -281,9 +347,9 @@
 						<div class="hamburger-menu" id="hamburger-two"></div>	  
 						<div class="modal-menu">
 							<div class="menu__inner">
-								<a href="#secondPage" data-anchor="secondPage" class="menuitem">portfolio</a>
+								<a href="page-portfolio.html" class="menuitem">portfolio</a>
 								<a href="#thirdPage"  data-anchor="thirdPage" class="menuitem">about us</a>
-								<a href="#" class="menuitem">contacts</a>
+								<a href="#fivePage" class="menuitem">contacts</a>
 							</div>
 						</div>  
 					</div>
@@ -386,15 +452,98 @@
 			</button>
 		</form> 
 	</div>
-	
+	<div class="portfolio-details">
+		<div id="item-first" class="item-page item-first">
+			<div class="item">
+				<img class="item-img" src="images/motor_bike001.png" alt="">
+				<h3 class="item__title">
+					Motor bike 001
+				</h3>
+				<div class="item__text">
+					Augmented reality is used to enhance natural environments or situations and offer perceptually enriched experiences. With the help of advanced AR technologies (e.g. adding computer vision, incorporating AR cameras into smartphone applications and object recognition) the information about the surrounding real world of the user becomes interactive and digitally manipulated. Information about the environment and its objects is overlaid on the real world. 
+				</div>
+			</div>
+		</div>
+		<div id="item-second" class="item-page item-second" >
+            <div class="item ">
+                <img class="item-img" src="images/gun.png" alt="">
+                <h3 class="item__title">
+                    Gun 001
+                </h3>
+                <div class="item__text">
+                    Augmented reality is used to enhance natural environments or situations and offer perceptually enriched experiences. With the help of advanced AR technologies (e.g. adding computer vision, incorporating AR cameras into smartphone applications and object recognition) the information about the surrounding real world of the user becomes interactive and digitally manipulated. Information about the environment and its objects is overlaid on the real world. 
+                </div>
+            </div>
+        </div>
+		<div id="item-fourth" class="item-page item-four" >
+            <div class="item">
+                <img class="item-img" src="images/item-1.png" alt="">
+                <h3 class="item__title">
+					Captain Metal
+				</h3>
+				<div class="item__text">
+					A 3d model of Captain Metal from the Sonic Universe spin-off comic. Pirate Plunder Panic.
+				</div>
+            </div>
+		</div>
+		<div id="item-5" class="item-page data-item-5" >
+            <div class="item ">
+                <img class="item-img" src="images/gun.png" alt="">
+                <h3 class="item__title">
+                    Gun 001
+                </h3>
+                <div class="item__text">
+                    Augmented reality is used to enhance natural environments or situations and offer perceptually enriched experiences. With the help of advanced AR technologies (e.g. adding computer vision, incorporating AR cameras into smartphone applications and object recognition) the information about the surrounding real world of the user becomes interactive and digitally manipulated. Information about the environment and its objects is overlaid on the real world. 
+                </div>
+            </div>
+		</div>
+		<div id="item-6" class="item-page data-item-6" >
+            <div class="item ">
+                <img class="item-img" src="images/tank.png" alt="">
+                <h3 class="item__title">
+                    BT-42
+                </h3>
+                <div class="item__text">
+                    The Finnish BT-42 made in memory of world war II as a historical tragedy.
+                </div>
+            </div>
+        </div>
+		<div id="item-three" class="item-page">
+			<div class="item">
+				<img class="item-img" src="images/content/robot-big.png" alt="">
+				<h3 class="item__title">
+					Lamp Bulb Robot
+				</h3>
+				<div class="item__text">
+					Self project made for a poster to grab the attention of ecology problems. Sad old robot holding the last flower on the Earth.
+				</div>
+				<div class="item-software">
+					<img src="images/content/about-1.png" alt="">
+					<img src="images/content/item-2.png" alt="">
+					<img src="images/content/image-1.png" alt="">
+				</div>
+				<div class="item__imgages">
+					<img src="images/content/item__img-1.png" alt="">
+					<img src="images/content/item__img-2.png" alt="">
+					<img src="images/content/item__img-3.png" alt="">
+					<img src="images/content/item__img-4.png" alt="">
+					<img src="images/content/item__img-5.png" alt="">
+					<img src="images/content/item__img-6.png" alt="">
+					<img src="images/content/item__img-7.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
 	<script src="libs/fancybox-master/jquery.fancybox.min.js"></script>
+	<script src="libs/swiper/swiper.min.js"></script>
 	<script src="libs/fullpage/easings.min.js"></script>
+	<script src="libs/fullpage/scrolloverflow.min.js"></script>
 	<script src="/libs/slick-slider/slick.min.js"></script>
 	<script src="libs/fullpage/fullpage.min.js"></script>
-	<script src="js/main.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
