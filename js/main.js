@@ -66,9 +66,8 @@ $(function(){
 		$('#fullpage').fullpage({
 			
 			anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivePage'],
-			easing: 'easeInOutCubic',
 			resetSliders: true,
-			scrollOverflow: true
+			scrollingSpeed: 500,
 		
 		});
 	}

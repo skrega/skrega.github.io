@@ -18,6 +18,12 @@
         }
     }
 }
+.header-logo{
+    img{
+        width: 150px;
+    }
+  
+}
 .menu__list{
     display: flex;
     li{
@@ -734,6 +740,12 @@
     
 
 }
+.footer__logo{
+    img{
+        width: 125px;
+    }
+    
+}
 .contacts{
     background-image: url(../images/footer-bg.png);
     background-repeat: no-repeat;
@@ -1232,6 +1244,9 @@
     } 
 }
 #item-fourth{
+    .item{
+        width: 100%;
+    }
     .item-img{
         max-width: 400px;
         width: 100%;
@@ -1421,6 +1436,28 @@
 }
 
 //team-page end
+
+.fullpage-wrapper {
+	width: 100%!important;
+	transform: none!important;
+}
+
+.fp-section {
+	width: 100%!important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 0;
+	transition: all .7s ease-in-out;
+}
+
+.fp-section.active {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+}
 
 @import "media";
 

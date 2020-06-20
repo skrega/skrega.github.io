@@ -110,9 +110,21 @@
         top: 450px;
     }
 }
+@media (max-width: 1450px){
+    .contacts{
+        .footer__inner{
+            max-width: 1100px;
+        }
+    }   
+    .contacts .contact-form {
+        height: 576px;
+        padding-top: 20px;
+    }
+}
+
 @media (max-width: 1300px){
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-        bottom: 36px;
+        bottom: 26px;
     }
     .hamburger-menu.animate {
         right: 351px;
@@ -142,11 +154,7 @@
             height: 400px;
         }
     }
-    .contacts{
-        .footer__inner{
-            max-width: 1100px;
-        }
-    }   
+  
     #item-7 .item::before {
         width: 32%;
         height: 54%;
@@ -223,6 +231,12 @@
     #item-6 .item::before {
         width: 20%;
         height: 43%;
+    }
+    .team__inner{
+        align-items: center;
+    }
+    .slider-team{
+        margin-top: 10px;
     }
 }
 
