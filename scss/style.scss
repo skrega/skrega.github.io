@@ -163,14 +163,6 @@
     display: none;
     text-align: center;
     position: relative;
-    input:-webkit-autofill {
-        -webkit-box-shadow: none;
-        -webkit-text-fill-color: #B8B8B8 !important;
-        }
-        input:focus, a:focus{
-        text-decoration: none !important;
-        outline: none !important;
-        }
     form{
         z-index: 2;
         padding: 0px 62px 0px;
