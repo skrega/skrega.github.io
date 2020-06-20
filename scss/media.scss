@@ -771,6 +771,11 @@
             height: 400px;
         }
     }
+    #item-11{
+        .item-img{
+            height: 100%;
+        }
+    }
     #item-9{
         .item-img{
             width: 350px;
@@ -1350,6 +1355,11 @@
     #item-7 .item-img {
         width: 250px;
         height: 150px;
+    }
+    #item-11{
+        .item-img{
+            width: 250px;
+        }
     }
 }
 @media (max-width: 390px){
