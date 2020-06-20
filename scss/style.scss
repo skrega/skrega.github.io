@@ -987,7 +987,7 @@
     }
 }
 .portfolio__items{
-    padding: 69px 0 10px;
+    padding: 69px 0 30px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
@@ -1141,17 +1141,19 @@
         }
     }
 }
-.portfolio-details{
-    .portfolio__img {
-        height: 135px;
-        display: inline-block;
-        img{
-            width: 100%;
-            height: 100%;
+// .portfolio-details{
+//     .portfolio__img {
+//         // height: 135px;
+//         // display: inline-block;
+//         img{
+//             width: 100%;
+//             height: 100%;
 
-        }
-    }
-}
+//         }
+//     }
+// }
+#item-first,
+#item-second,
 #item-5,
 #item-6,
 #item-7,
@@ -1161,10 +1163,6 @@
 #item-11,
 #item-12{
     width: 100%;
-    .item-img{
-        max-width: 700px;
-        width: 100%;
-    }
     .item{
         &::before{
             right: -51px;
@@ -1176,20 +1174,17 @@
     .item{
         &::before{
             background-image: url(../images/hours-before.png);
-            width: 13%;
-            height: 60%;
+            width: 200px;
+            height: 338px;
         }
-    }
-    .item-img{
-        width: 389px;
     }
 }
 #item-6{
     .item{
         &::before{
             background-image: url(../images/tank-before.png);
-            width: 17%;
-            height: 60%;
+            width: 273px;
+            height: 320px;
         }
     }
 }
@@ -1197,8 +1192,9 @@
     .item{
         &::before{
             background-image: url(../images/motor_bike2-before.png);
-            width: 19%;
-            height: 55%;
+            width: 300px;
+            height: 263px;
+            top: 400px;
         }
     }
 }
@@ -1206,8 +1202,8 @@
     .item{
         &::before{
             background-image: url(../images/space-before.png);
-            width: 15%;
-            height: 55%;
+            width: 200px;
+            height: 279px;
             top: 370px;
         }
     }
@@ -1217,9 +1213,9 @@
     .item{
         &::before{
             background-image: url(../images/forest-before.png);
-            width: 19%;
-            height: 94%;
-            top: 99px;
+            width: 250px;
+            height: 400px;
+            top: 400px;
         }
     } 
 }
@@ -1227,8 +1223,9 @@
     .item{
         &::before{
             background-image: url(../images/statues-before.png);
-            width: 11%;
-            height: 70%;
+            width: 200px;
+            height: 420px;
+            top: 400px;
         }
     } 
 }
@@ -1236,20 +1233,24 @@
     .item{
         &::before{
             background-image: url(../images/highres-before.png);
-            width: 11%;
-            height: 37%;
-            top: 502px;
+            width: 200px;
+            height: 306px;
+            top: 702px;
         }
     } 
 }
 #item-fourth{
-    .item{
-        width: 100%;
+    width: 100%;
+    &::before{
+        width: 325px;
+        height: 466px;
+        top: 300px;
     }
-    .item-img{
-        max-width: 400px;
-        width: 100%;
-    }
+    
+}
+.fancybox-navigation .fancybox-button {
+    top: calc(38% - 50px);
+
 }
 .fancybox-slide {
     overflow-x: hidden;
@@ -1257,6 +1258,49 @@
 }
 .fancybox-slide::-webkit-scrollbar {width:0px;}
 
+.details-img{
+    max-width: 800px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    .item-img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.item-13,
+.item-14,
+.item-17,
+.item-18,
+.item-19,
+.item-20,
+.item-21{
+    img{
+       width: 82%;
+    }
+}
+.item-16{
+    img{
+        width: 68%;
+    }
+}
+.item-15{
+    img{
+        width: 34%;
+    }
+}
+.item-18{
+    img{
+        width: 40%;
+    }
+}
+.item-21{
+    img{
+        width: 50%;
+    }
+}
 //page portfolio end
 //page-item strat
 
@@ -1270,10 +1314,10 @@
 .item{
     text-align: center;
     position: relative;
+    width: 100%;
     &::before{
         position: absolute;
         content: "";
-        background-image: url(../images/item__robot-before.png);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 365px;
@@ -1291,6 +1335,11 @@
     line-height: 54px;
     text-transform: capitalize;
     margin-bottom: 18px;
+}
+.item__text{
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
 }
 .item-software{
     margin-top: 21px;
@@ -1320,6 +1369,15 @@
         transform: rotate(180deg);
         z-index: 3;
     }
+}
+#item-three{
+    .item{
+        &::before{
+            background-image: url(../images/item__robot-before.png);
+        }
+    }
+   
+    
 }
 .item-four,
 .item-second,
@@ -1353,16 +1411,33 @@
     }
     &::before{
         background-image: url(../images/Motor_bike-before.png);
-        width: 20%;
-        height: 35%;
+        width: 400px;
+        height: 300px;
         top: 400px;
     }
+    
 }
 .item-second{
     &::before{
         background-image: url(../images/gun-before.png);
-        width: 19%;
-        height: 32%;
+        width: 335px;
+        height: 223px;
+        top: 500px;
+    }
+}
+.item-three{
+    .details-img{
+        img{
+            width: auto;
+        }
+       
+    }
+}
+.item-four{
+    .details-img{
+        img{
+
+        }
     }
 }
 .icon-cross{
@@ -1397,7 +1472,8 @@
 .data-item-9,
 .data-item-10,
 .data-item-11,
-.data-item-12{
+.data-item-12,
+.data-item{
     display: none;
 }
 
