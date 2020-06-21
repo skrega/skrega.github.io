@@ -18,11 +18,20 @@
         }
     }
 }
+
 .header-logo{
+    position: relative;
     img{
-        width: 150px;
+        width: 100px;
     }
-  
+    span{
+        font-family:"Brie Light";
+        font-weight: 300;
+        color: rgba(#fff, 0.7);
+        position: absolute;
+        right: -31px;
+        bottom: -3px;
+    }
 }
 .menu__list{
     display: flex;
@@ -570,11 +579,16 @@
 .about__list{
     display: flex;
     margin-left: 13px;
+    align-items: center;
     li{
         & + li{
             margin-left: 21px;
         }
     }
+}
+.substance-painter,
+.substance-disigner{
+    width: 40px;
 }
 .button.about-btn{
     border-color: #F4F4AD;
@@ -1271,6 +1285,11 @@
         height: 100%;
     }
 }
+#item-fourth{
+    .item-img{
+        width: 69%;
+    }
+}
 .portfolio-card{
     img{
       height: 100%;;
@@ -1380,10 +1399,10 @@
     }
 }
 .item-first{
-    img{
-        max-width: 800px;
-        width: 100%;
-    }
+    // img{
+    //     max-width: 800px;
+    //     width: 100%;
+    // }
     &::before{
         background-image: url(../images/Motor_bike-before.png);
         width: 400px;
