@@ -1166,14 +1166,6 @@
             }
         }
         
-        // &.item-13{
-        //     &::before{
-        //         background-image: url(../images/content/robo-boy.png);
-        //         width: 196px;
-        //         height: 189px;
-        //         opacity: 0.2;
-        //     }
-        // }
     }
 }
 
@@ -1197,8 +1189,6 @@
     }
 }
 
-#item-first,
-#item-second,
 #item-5,
 #item-6,
 #item-7,
@@ -1215,75 +1205,6 @@
     }
 }
 
-#item-5{
-    .item{
-        &::before{
-            background-image: url(../images/hours-before.png);
-            width: 200px;
-            height: 338px;
-        }
-    }
-}
-#item-6{
-    .item{
-        &::before{
-            background-image: url(../images/tank-before.png);
-            width: 273px;
-            height: 320px;
-        }
-    }
-}
-#item-7{
-    .item{
-        &::before{
-            background-image: url(../images/motor_bike2-before.png);
-            width: 300px;
-            height: 263px;
-            top: 400px;
-        }
-    }
-}
-#item-9{
-    .item{
-        &::before{
-            background-image: url(../images/space-before.png);
-            width: 200px;
-            height: 279px;
-            top: 370px;
-        }
-    }
-    
-}
-#item-10{
-    .item{
-        &::before{
-            background-image: url(../images/forest-before.png);
-            width: 250px;
-            height: 400px;
-            top: 400px;
-        }
-    } 
-}
-#item-11{
-    .item{
-        &::before{
-            background-image: url(../images/statues-before.png);
-            width: 200px;
-            height: 420px;
-            top: 400px;
-        }
-    } 
-}
-#item-12{
-    .item{
-        &::before{
-            background-image: url(../images/highres-before.png);
-            width: 200px;
-            height: 306px;
-            top: 702px;
-        }
-    } 
-}
 
 #item-fourth{
     width: 100%;
@@ -1316,11 +1237,7 @@
         height: 100%;
     }
 }
-#item-fourth{
-    .item-img{
-        width: 69%;
-    }
-}
+
 .img-portfolio{
     img{
       height: 100%;;
@@ -1395,31 +1312,59 @@
         z-index: 3;
     }
 }
-#item-three{
-    .item{
-        &::before{
-            background-image: url(../images/item__robot-before.png);
+.portfolio__details-img{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    width: 50vw;
+    height: 39vw;
+    top: 300px;
+    right: 0;
+}
+.portfolio__details-img.anouther{
+    width: 20vw;
+    height: 22vw;
+    top: 550px;
+    right: -10px;
+}
+.data-item {
+    width: 100%;
+}
+.portfolio__details-img.before{
+    height: 36vh;
+    opacity: 0.4;
+    right: -60px;
+    top: 400px;
+}
+#item-15{
+    .details-img{
+        .item-img{
+            width: 60%;
         }
     }
-   
-    
 }
-.item-four,
-.item-second,
-.item-first{
-    position: relative;
-    &::before{
-        position: absolute;
-        content: "";
-        width: 22%;
-        height: 100%;
-        background-image: url(../images/content/Captain__item-page.png);
-        z-index: -1;
-        right: -3px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        top: 123px;
+#item-26{
+    .details-img{
+        .item-img{
+            width: 44%;
+        }
     }
+    .portfolio__details-img.before {
+        height: 55vh;
+    }
+}
+#item-28{
+    .details-img .item-img {
+        width: 70%;
+    }
+    .portfolio__details-img.before {
+        height: 56vh;
+    }
+}
+   
+.item-four{
+    position: relative;
     .item{
         &::before{
             display: none;
@@ -1427,27 +1372,6 @@
     }
     .item-arrows{
         top: 55%;
-    }
-}
-.item-first{
-    // img{
-    //     max-width: 800px;
-    //     width: 100%;
-    // }
-    &::before{
-        background-image: url(../images/Motor_bike-before.png);
-        width: 400px;
-        height: 300px;
-        top: 400px;
-    }
-    
-}
-.item-second{
-    &::before{
-        background-image: url(../images/gun-before.png);
-        width: 335px;
-        height: 223px;
-        top: 500px;
     }
 }
 .item-three{
@@ -1474,15 +1398,8 @@
     background-color: transparent;
     overflow: initial;
 }
-.item-first{
-    .fancybox-close-small{
-        width: 20px;
-        height: 20px;
-    }
-}
+
 .item-four,
-.item-second,
-.item-first,
 .item-page,
 .data-item-5,
 .data-item-6,
