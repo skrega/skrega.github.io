@@ -240,7 +240,7 @@
     font-size: 37px;
     line-height: 38px;
     text-transform: uppercase;
-    text-shadow: 0px 0px 7px #F80BFD;
+    text-shadow: 1px 3px 4px #F80BFD;
     margin-bottom: 16px;
 }
 .form__text{
@@ -259,10 +259,19 @@
 
 .portfolio{
     &__title{
-        text-shadow: 0px 0px 7px #F80BFD;
         margin-top: 14px;
         margin-bottom: 27px;
         text-align: center;
+        text-shadow: 3px 1px 6px #F80BFD;
+        position: relative;
+        &::before{
+            content: "PORTFOLIO";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            text-shadow: -3px 0px 6px #F80BFD;
+        }
     }
     &__link{
        float: right;
@@ -562,6 +571,13 @@
 .title.about__title{
     text-shadow: 0px 0px 7px #DDDD08;
     text-align: left;
+    position: relative;
+    &::before{
+        content: "ABOUT US";
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }
 .about__text{
     width: 672px;
@@ -648,6 +664,17 @@
         right: 0;
         z-index: -1;
         opacity: 0.1;
+    }
+    &__title{
+        position: relative;
+        &::before{
+            content: "OUR TEAM";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            text-shadow: -3px 0px 6px #F80BFD;
+        }
     }
     &__info{
         margin-left: 50px;
@@ -992,7 +1019,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         z-index: -1;
-        mix-blend-mode: overlay;
+        opacity: 0.1;
     }
     &::before{
         background-image: url(../images/portfolio-bg.png);
