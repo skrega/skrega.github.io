@@ -1253,7 +1253,7 @@
 .fancybox-slide::-webkit-scrollbar {width:0px;}
 
 .details-img{
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
@@ -1261,13 +1261,13 @@
     display: flex;
     .item-img{
         width: 100%;
-        height: 100%;
+        //height: 100%;
     }
 }
 
 .img-portfolio{
     img{
-      height: 100%;;
+      height: 92%;
     }
 }
 //page portfolio end
@@ -1313,7 +1313,10 @@
 .item-software{
     margin-top: 21px;
     margin-bottom: 90px;
-
+    height: 35px;
+    img{
+        height: 100%;
+    }
     img + img{
         margin-left: 35px;
     }
@@ -1359,17 +1362,22 @@
     width: 100%;
 }
 .portfolio__details-img.before{
-    height: 36vh;
-    opacity: 0.4;
-    right: -60px;
-    top: 400px;
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
+    left: 0; 
+    top: 0;
+    background-size: contain;
+    background-position: center center
 }
-#item-15{
-    .details-img{
-        .item-img{
-            width: 60%;
-        }
-    }
+.img-wrap{
+    right: -100px;
+    top: 400px;
+    width: 26.05vw;
+    height: 26.05vw;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
 }
 #item-26{
     .details-img{
@@ -1377,18 +1385,9 @@
             width: 44%;
         }
     }
-    .portfolio__details-img.before {
-        height: 55vh;
-    }
+   
 }
-#item-28{
-    .details-img .item-img {
-        width: 70%;
-    }
-    .portfolio__details-img.before {
-        height: 56vh;
-    }
-}
+
    
 .item-four{
     position: relative;
