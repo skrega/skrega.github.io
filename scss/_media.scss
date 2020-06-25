@@ -6,9 +6,6 @@
         position: absolute;
         right: 400px;
     }
-    .main__img{
-        max-width: 1290px;
-    }
     .robot-img{
         min-height: 0;
         height: 600px;
@@ -55,9 +52,6 @@
 @media (max-width: 1500px){
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
         bottom: 17px;
-    }
-    .main__img{
-        max-width: 1100px;
     }
     .swiper-container {
         padding-top: 147px;
@@ -139,9 +133,6 @@
         transform: translateX(-316px);
         position: absolute;
         right: 0;
-    }
-    .main__img{
-        max-width: 900px;
     }
     #hamburger-open, #hamburger-two, #hamburger-three,
     #hamburger-fourth{
@@ -388,7 +379,7 @@
             top: 0;
         }
     }
-    .main__img{
+    .main__wrapper-img{
         display: none;
     }
     .mobile__img{
@@ -658,11 +649,6 @@
         font-size: 13px;
         line-height: 18px;
     }
-    .main__img{
-        width: 320px;
-        height: 665px;
-    }
-  
     .slider__link{
         margin-top: 10px;
     }
