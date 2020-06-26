@@ -210,6 +210,9 @@
                 background-color: transparent;
             };
         }
+        input:-webkit-autofill {
+            background-color: transparent !important;
+        }
         button{
             margin-top: 50px;
             border: none;
