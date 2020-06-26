@@ -1367,7 +1367,7 @@
 .portfolio__details-img.anouther{
     width: 20vw;
     height: 22vw;
-    top: 550px;
+    top: 200px;
     right: -10px;
 }
 .data-item {
@@ -1383,8 +1383,8 @@
     background-position: center center
 }
 .img-wrap{
-    right: -100px;
-    top: 300px;
+    right: 0px;
+    top: 200px;
     width: 26.05vw;
     height: 26.05vw;
     position: absolute;
@@ -1450,7 +1450,12 @@
 .data-item{
     display: none;
 }
-
+.item-19{
+    .item-images{
+        width: 70%;
+    }
+  
+}
 .fancybox-navigation .fancybox-button--arrow_right{
     &::before{
         content: url(../images/arrows-left.png);

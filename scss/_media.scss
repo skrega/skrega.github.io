@@ -268,7 +268,6 @@
 @media (max-width: 1024px){
     .portfolio__details-img.anouther {
         height: 37vw;
-        top: 500px;
     }
     .header-section{
         display: none;
@@ -569,12 +568,11 @@
     }
     .portfolio__details-img.anouther {
         height: 34vw;
-        top: 400px;
     }
 }
 @media (max-width: 768px){
     .img-wrap {
-        top: 460px;
+        right: -80px;
         width: 36vw;
     }
     #item-28 .portfolio__details-img.before {
@@ -634,8 +632,11 @@
 
 @media (max-width: 630px){
     .img-wrap {
-        top: 292px;
-        width: 50vw;
+        top: 171px;
+        width: 40vw;
+    }
+    .portfolio__details-img.anouther {
+        top: 100px;
     }
     .main__inner{
         margin-top: 194px;
@@ -961,6 +962,9 @@
     }
 }
 @media (max-width: 425px){
+    .portfolio__details-img.anouther{
+        display: none;
+    }
     .item-software{
         img + img{
             margin-left: 20px;
