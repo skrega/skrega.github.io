@@ -1383,13 +1383,40 @@
     background-position: center center
 }
 .img-wrap{
-    right: 0px;
+    right: -270px;
     top: 200px;
-    width: 21.05vw;
-    height: 21.05vw;
+    width: 41.7vw;
+    height: 41.7vw;
     position: absolute;
-    z-index: -1;
-    opacity: 0.4;
+    div{
+        width: 90%;
+        height: 80%;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+#item-12{
+    .img-wrap{
+        top: 0px;
+   } 
+}
+#item-27{
+    .img-wrap{
+        top: 100px;
+   } 
+}
+#item-28{
+    .img-wrap{
+        top: 350px;
+   } 
+}
+#item-30{
+    .img-wrap{
+     right: -190px;
+   } 
 }
 #item-26{
     .details-img{
