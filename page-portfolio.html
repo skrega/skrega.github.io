@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Game Development</title>
     <link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/overlayScroll/OverlayScrollbars.css">
 	<link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
@@ -1300,10 +1301,17 @@
             
         </div>
     </div>
-   
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
-	<script src="libs/fancybox-master/jquery.fancybox.min.js"></script>
-	<script src="js/main.min.js"></script>
+    <script src="libs/fancybox-master/jquery.fancybox.min.js"></script>
+    <script src="libs/overlayScroll/jquery.overlayScrollbars.js"></script>
+    <script src="js/main.min.js"></script>
+    
+    <script text="javascript/text">
+        $('body').overlayScrollbars({ 
+		clickScrolling: true,
+	});
+    </script>
 </body>
 </html>

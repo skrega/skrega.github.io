@@ -61,6 +61,10 @@ $(function(){
 	//slick slider
 	//fullpage.js start
 
+	// $('#fullpage').fullpage({
+	// 	navigation: true
+	// })
+
 	var doFullpage = document.documentElement.clientWidth;
 	if (doFullpage > 1024) {
 		$('#fullpage').fullpage({
@@ -285,6 +289,14 @@ $(function(){
 
 	
 	//mojs end
+	// $('.thansk-message').fancybox({
+	// 	helpers : { 
+	// 	overlay: {
+	// 		overlayColor: '#000' 
+	// 		} 
+	// 	}
+	// })
+	// 
 
 });
 

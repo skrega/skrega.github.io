@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="libs/fullpage/fullpage.css">
 	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
 	<link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
+
 	<link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
    
@@ -52,7 +53,7 @@
 						</div>
 						<a  data-fancybox data-src="#contact-form" href="javascript:;" class="button">
 							<svg width="270" height="62">
-							   <rect x="3" y="3" rx="9" fill="none" stroke="url(#grad1)" width="220" height="50"></rect>
+								<rect x="3" y="3" rx="9" fill="none" stroke="url(#grad1)" width="220" height="50"></rect>
 							</svg>
 							<span>contact us</span>
 						</a>
@@ -63,7 +64,7 @@
 				<a href="#secondPage" data-anchor="secondPage" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow" data-anchor="slide2"><img src="images/arrows.png" alt=""></a>
 			</div>
 		</header>
-		 <section id="portfolio" class="portfolio section">
+		<section id="portfolio" class="portfolio section">
 			<div class="container">
 				<div class="header-section">
 					<a href="#firstPage" class="header-logo">
@@ -210,7 +211,7 @@
 								Our team is very flexible and each of us can work in different styles. Additionally, 
 								our team is fluent in 9 different languages including English, Japanese, Korean, Russian, 
 								Ukrainian, Spanish, Portuguese, Cantonese, and Vietnamese. So we can communicate with you in any of the
-								 listed languages that is most comfortable for you.
+									listed languages that is most comfortable for you.
 							</p>
 							<p class="about__paragraph-third">
 								Well Played Games ready to develop a 2D or 3D concept 
@@ -235,13 +236,13 @@
 						</div>
 						<a data-fancybox data-src="#contact-form"href="javascript:;" class="button about-btn">
 							<svg width="270" height="62">
-							  <defs>
-								  <linearGradient id="grad1">
-									  <stop offset="0%" stop-color="#FEECFF"/>
-									  <stop offset="100%" stop-color="#FEECFF" />
-								  </linearGradient>
-							  </defs>
-							   <rect x="3" y="3" rx="9" fill="none" stroke="url(#grad1)" width="220" height="50"></rect>
+								<defs>
+									<linearGradient id="grad1">
+										<stop offset="0%" stop-color="#FEECFF"/>
+										<stop offset="100%" stop-color="#FEECFF" />
+									</linearGradient>
+								</defs>
+								<rect x="3" y="3" rx="9" fill="none" stroke="url(#grad1)" width="220" height="50"></rect>
 							</svg>
 							<span>contact us</span>
 						</a>
@@ -398,12 +399,12 @@
 							<input type="text" placeholder="your name"  readonly onfocus="this.removeAttribute('readonly');">
 							<input type="email" placeholder="your E-Mail"  readonly onfocus="this.removeAttribute('readonly');">
 							<input type="text" placeholder="your comment"  readonly onfocus="this.removeAttribute('readonly');">
-							<button type="submit" class="button">
+							<a type="submit" class="button" href="#thansk-message"  data-fancybox>
 								<svg width="270" height="62">
-								   <rect x="3" y="3" rx="9" fill="none" stroke="url(#grad1)" width="220" height="50"></rect>
+									<rect x="3" y="3" rx="9" fill="none" stroke="url(#grad1)" width="220" height="50"></rect>
 								</svg>
 								<span>contact us</span>
-							</button>
+							</a>
 						</form>
 					</div>
 				</div>
@@ -435,34 +436,35 @@
 				</div>
 			</div>
 		</footer>
-	</div>
-	<div id="contact-form">
-		<div class="blur"></div>
-		<div class="form__title">
-			do you have a project?
-		</div>	
-		<div class="form__text">
-			write to us and we will do something cool
+		<div id="contact-form">
+			<div class="blur"></div>
+			<div class="form__title">
+				do you have a project?
+			</div>	
+			<div class="form__text">
+				write to us and we will do something cool
+			</div>
+			<form autocomplete="off">
+				<input type="text" placeholder="your name"  readonly onfocus="this.removeAttribute('readonly');">
+				<input type="email" placeholder="your E-Mail"  readonly onfocus="this.removeAttribute('readonly');">
+				<input type="text" placeholder="your comment"  readonly onfocus="this.removeAttribute('readonly');">
+				<button class="button">
+					<svg width="270" height="62">
+					  <defs>
+						  <linearGradient id="grad1">
+							  <stop offset="0%" stop-color="#FEECFF"/>
+							  <stop offset="100%" stop-color="#FEECFF" />
+						  </linearGradient>
+					  </defs>
+					   <rect x="3" y="3" rx="9" fill="none" stroke="url(#grad1)" width="220" height="50"></rect>
+					</svg>
+					<span>contact us</span> 
+				</button>
+			</form> 
 		</div>
-		<form autocomplete="off">
-			<input type="text" placeholder="your name"  readonly onfocus="this.removeAttribute('readonly');">
-			<input type="email" placeholder="your E-Mail"  readonly onfocus="this.removeAttribute('readonly');">
-			<input type="text" placeholder="your comment"  readonly onfocus="this.removeAttribute('readonly');">
-			<button type="submit" class="button">
-				<svg width="270" height="62">
-				  <defs>
-					  <linearGradient id="grad1">
-						  <stop offset="0%" stop-color="#FEECFF"/>
-						  <stop offset="100%" stop-color="#FEECFF" />
-					  </linearGradient>
-				  </defs>
-				   <rect x="3" y="3" rx="9" fill="none" stroke="url(#grad1)" width="220" height="50"></rect>
-				</svg>
-				<span>contact us</span>
-			</button>
-		</form> 
-	</div>
-	<div class="portfolio-details">
+		</div>
+	
+	<div class="portfolio-details" >
 		<div id="item-first" class="item-page item-first">
 			<div class="item">
 				<div class="details-img">
@@ -613,6 +615,18 @@
 			</div>
 		</div>
 	</div>
+	<div class="thansk-message" id="thansk-message" style="display: none;">
+		<div class="thansk-message__title title">
+			THANK YOU!
+		</div>
+		<div class="thansk-message__text">
+			your message has been submitted
+		</div>
+		<button class="thansk-message__button" data-fancybox-close>
+			Ok
+		</button>
+		<img class="thanks-img" src="images/thanks-img.png" alt="">
+	</div>
 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -621,8 +635,8 @@
 	<script src="libs/swiper/swiper.min.js"></script>
 	<script src="libs/fullpage/easings.min.js"></script>
 	<script src="libs/fullpage/scrolloverflow.min.js"></script>
-	<script src="/libs/slick-slider/slick.min.js"></script>
+	<script src="libs/slick-slider/slick.min.js"></script>
 	<script src="libs/fullpage/fullpage.min.js"></script>
-	<script src="js/main.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
