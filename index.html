@@ -344,7 +344,9 @@
 					</div>
 				</div>
 			</div>
-			<a href="#fivePage" data-anchor="fivePage" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow" data-anchor="slide2"><img src="images/arrows.png" alt=""></a>
+			<a href="#fivePage" data-anchor="fivePage" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow" data-anchor="slide2">
+				<img src="images/arrows.png" alt="">
+			</a>
 		</section>
 		<footer id="contact" class="contacts section">
 			<div class="container">
@@ -377,12 +379,12 @@
 						</div>
 						<div class="information__link">
 							<div class="information__link-contacts">
-								<a class="information__phone icon-phone" href="tel:+375296757856">+375(29) 675-78-56</a>
+								<!--a class="information__phone icon-phone" href="tel:+375296757856">+375(29) 675-78-56</a-->
 								<a class="information__address icon-location"href="#">Toronto ON, Canada</a>
-								<a class="information__mail icon-mail-envelope-closed" href="#">e-mail</a>
+								<a class="information__mail icon-mail-envelope-closed" href="mailto:0wpgames0@gmail.com">e-mail</a>
 							</div>
 							<div class="information__link-social">
-								<a href="#" class="icon-instagram"></a>
+								<a href="https://www.instagram.com/wellplayed_games/" class="icon-instagram"></a>
 								<a href="#" class="icon-facebook"></a>
 							</div>
 						</div>
@@ -395,23 +397,24 @@
 						<div class="form__text">
 							we will answer all your questions
 						</div>
-						<form autocomplete="off">
-							<input type="text" placeholder="your name"  readonly onfocus="this.removeAttribute('readonly');">
-							<input type="email" placeholder="your E-Mail"  readonly onfocus="this.removeAttribute('readonly');">
-							<input type="text" placeholder="your comment"  readonly onfocus="this.removeAttribute('readonly');">
-							<a type="submit" class="button" href="#thansk-message"  data-fancybox>
+						<form autocomplete="off" onsubmit="callbackSubmit(event, this);" method="post">
+							<input name="page" type="hidden" value="Contacts">
+							<input name="name" type="text" placeholder="your name" readonly onfocus="this.removeAttribute('readonly');">
+							<input name="email" type="email" placeholder="your E-Mail" readonly onfocus="this.removeAttribute('readonly');">
+							<input name="comment" type="text" placeholder="your comment" readonly onfocus="this.removeAttribute('readonly');">
+							<button type="submit" class="button">
 								<svg width="270" height="62">
 									<rect x="3" y="3" rx="9" fill="none" stroke="url(#grad1)" width="220" height="50"></rect>
 								</svg>
 								<span>contact us</span>
-							</a>
+							</button>
 						</form>
 					</div>
 				</div>
 				<div class="information__link-contacts mobile">
-					<a class="information__phone icon-phone" href="tel:+375296757856">+375(29) 675-78-56</a>
-					<a class="information__address icon-location"href="#">Toronto ON, Canada</a>
-					<a class="information__mail icon-mail-envelope-closed" href="#">e-mail</a>
+					<!--a class="information__phone icon-phone" href="tel:+375296757856">+375(29) 675-78-56</a-->
+					<a class="information__address icon-location" href="#">Toronto ON, Canada</a>
+					<a class="information__mail icon-mail-envelope-closed" href="mailto:0wpgames0@gmail.com">e-mail</a>
 				</div>
 				<div class="footer__inner">
 					<div class="footer__logo">
@@ -422,14 +425,14 @@
 						<span class="footer-name">well Played games</span>
 					</div>
 					<div class="footer__author-mobile">
-						Design by <a href="#">FoxDesign</a>
+						Design by <a href="https://www.behance.net/FoxDesign7">FoxDesign</a>
 					</div>
 					<div class="footer__copy">
 						all rights reserved.
 					</div>
 					<div class="footer__author">
 						<span>Design by:</span>
-						<a href="#" class="author-logo">
+						<a href="https://www.behance.net/FoxDesign7" class="author-logo">
 							<img src="images/author-logo.png" alt="">
 						</a>
 					</div>
@@ -444,11 +447,12 @@
 			<div class="form__text">
 				write to us and we will do something cool
 			</div>
-			<form autocomplete="off">
-				<input type="text" placeholder="your name"  readonly onfocus="this.removeAttribute('readonly');">
-				<input type="email" placeholder="your E-Mail"  readonly onfocus="this.removeAttribute('readonly');">
-				<input type="text" placeholder="your comment"  readonly onfocus="this.removeAttribute('readonly');">
-				<button class="button">
+			<form autocomplete="off" onsubmit="callbackSubmit(event, this);" method="post">
+				<input name="page" type="hidden" value="Contacts">
+				<input name="name" type="text" placeholder="your name"  readonly onfocus="this.removeAttribute('readonly');">
+				<input name="email" type="email" placeholder="your E-Mail"  readonly onfocus="this.removeAttribute('readonly');">
+				<input name="comment" type="text" placeholder="your comment"  readonly onfocus="this.removeAttribute('readonly');">
+				<button class="button" type="submit">
 					<svg width="270" height="62">
 					  <defs>
 						  <linearGradient id="grad1">
@@ -622,9 +626,6 @@
 		<div class="thansk-message__text">
 			your message has been submitted
 		</div>
-		<!-- <button class="thansk-message__button" data-fancybox-close>
-		 	<span>Ok</span>	
-		</button> -->
 		<button class="button thansk-message__btn" data-fancybox-close>
 			<svg width="270" height="62">
 			  <defs>
@@ -650,5 +651,6 @@
 	<script src="libs/slick-slider/slick.min.js"></script>
 	<script src="libs/fullpage/fullpage.min.js"></script>
 	<script src="js/main.min.js"></script>
+	<script src="js/mail.js"></script>
 </body>
 </html>

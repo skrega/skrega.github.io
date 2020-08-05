@@ -68,11 +68,9 @@ $(function(){
 	var doFullpage = document.documentElement.clientWidth;
 	if (doFullpage > 1024) {
 		$('#fullpage').fullpage({
-			
 			anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivePage'],
 			resetSliders: true,
 			scrollingSpeed: 500,
-		
 		});
 	}
 
@@ -289,6 +287,7 @@ $(function(){
 
 	
 	//mojs end
+	
 	// $('.thansk-message').fancybox({
 	// 	helpers : { 
 	// 	overlay: {
