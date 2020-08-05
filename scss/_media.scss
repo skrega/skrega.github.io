@@ -144,7 +144,7 @@
         width: 70%;
     }
     .hamburger-menu.animate {
-        transform: translateX(-316px);
+        transform: translateX(-333px);
         position: absolute;
         right: 0;
     }
@@ -282,6 +282,9 @@
 @media (max-width: 1024px){
     .portfolio__details-img.anouther {
         height: 37vw;
+    }
+    .menu-wrapper{
+        margin-right: 20px;
     }
     .header-section{
         display: none;
@@ -654,6 +657,19 @@
     .swiper-slide.swiper-slide-active .slider-card {
         height: 251px !important;
     }
+    .thansk-message__title {
+        font-family: "Brie Light";
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 49px;
+        text-transform: uppercase;
+        margin-top: 68px;
+    }
+    .thansk-message__text {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 28px 0 50px;
+    }
 
 }
 
@@ -802,10 +818,24 @@
     .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
         right: 3%;
     }
+    .thansk-message {
+        max-width: 500px;
+        height: 300px;
+        padding: 10px;
+    }
+    .thansk-message__title{
+        margin-top: 45px;
+    }
+    .thanks-img{
+        width: 400px;
+    }
    
 }
 @media (max-width: 530px){
-  
+  html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
     #item-26{
         .portfolio__details-img.before {
             width: 26vw;
@@ -839,6 +869,9 @@
                 display: block;
                 width: 100%;
                 border: 3px solid #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 svg{
                     display: none;
                 }
@@ -924,6 +957,7 @@
     .img-wrap {
         display: none;
     }
+   
    
 }
 @media (max-width: 460px){
@@ -1224,6 +1258,23 @@
         }
        
     }
+    .thansk-message__title{
+        font-size: 42px;
+        line-height: 45px;
+        margin-top: 30px;
+    }
+    .thansk-message {
+        max-width: 310px;
+        height: 252px;
+        padding: 10px;
+    }
+    .thansk-message__text{
+        margin-bottom: 29px;
+    }
+    .thanks-img {
+        width: 258px;
+    }
+
 }
 @media (max-width: 390px){
     .swiper-container {
