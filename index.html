@@ -13,7 +13,28 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
-   
+	<style>
+		@media (min-width: 630px) {
+			.swiper-slide.swiper-slide-active .slider-card.slide-2 img {
+				width: 61%;
+				height: 161%;
+				bottom: 6px;
+				right: 109px;
+			}
+			.swiper-slide.swiper-slide-active .slider-card.slide-3 img {
+				width: 54%;
+				height: 148%;
+				right: 134px;
+				bottom: 10px;
+			}
+		}
+		@media (max-width: 1024px) {
+			.mobile__img {
+				top: auto;
+				bottom: 0;
+			}
+		}
+	</style>
 </head>
 <body class="fp-responsive">
 	<div id="fullpage">
@@ -58,8 +79,8 @@
 							<span>contact us</span>
 						</a>
 					</div>
-					<div class="main__wrapper-img" style="background-image: url(images/3d-model.png);"></div>		  
-					<img class="mobile__img" src="images/mobile-model.png" alt="">				  
+					<div class="main__wrapper-img" style="background-image: url(images/design/index-main.png);"></div>		  
+					<img class="mobile__img" src="images/design/index-main-mobile.png" alt="">				  
 				</div>
 				<a href="#secondPage" data-anchor="secondPage" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow" data-anchor="slide2"><img src="images/arrows.png" alt=""></a>
 			</div>
@@ -103,7 +124,41 @@
 								</a>
 							</div>
 						</div>
-						<div class="swiper-slide ">
+						
+						<div class="swiper-slide">
+							<div class="slider-card slide-2">
+								<a data-fancybox href="javascript:;"  data-src="#item-22" class="slider__img">
+									<img src="images/content/winry.png" alt="" >
+								</a>
+								<div class="slider__title">
+									Winry Rockbell
+								</div>
+								<div class="slider__text">
+									This is my version of Winry Rockbell from Full-metal Alchemist Brotherhood. It's in between realistic and stylized style which was fun to make.
+								</div>
+								<a data-fancybox href="javascript:;"  data-src="#item-22" class="slider__link">
+									Detailed
+								</a>
+							</div>							
+						</div>
+						<div class="swiper-slide">
+							<div class="slider-card slide-3">
+								<a data-fancybox href="javascript:;" data-src="#item-20" href="#" class="slider__img">
+									<img src="images/content/the_burrow.png" alt="">
+								</a>
+								<div class="slider__title">
+									The Burrow
+								</div>
+								<div class="slider__text">
+									A stylized version of The Burrow — Weasley's home from Harry Potter movie
+								</div>
+								<a data-fancybox href="javascript:;" data-src="#item-20" class="slider__link">
+									Detailed
+								</a>
+							</div>
+						</div>
+						
+						<!--div class="swiper-slide ">
 							<div class="slider-card slide-2">
 								<a data-fancybox href="javascript:;"  data-src="#item-first" class="slider__img">
 									<img src="images/motor_bike001.png" alt="" >
@@ -134,7 +189,7 @@
 									Detailed
 								</a>
 							</div>
-						</div>
+						</div-->
 						<div class="swiper-slide ">
 							<div class="slider-card slide-4">
 								<a href="javascript:;" data-src="#item-6" data-fancybox class="slider__img">
@@ -590,6 +645,72 @@
                     <img src="" alt="">
                 </div>
             </div>
+        </div>
+		<div id="item-22" class="item-page data-item-22">
+            <div class="item ">
+                <div class="details-img">
+                    <img class="item-img" src="images/content/winry.png" alt="">
+                </div>
+                <h3 class="item__title">
+                    Winry Rockbell
+                </h3>
+                <div class="item__text">
+                    This is my version of Winry Rockbell from Full-metal Alchemist Brotherhood. It's an in between realistic and stylized style which was fun to make. The hair was made in xGen.
+                </div>
+                  <div class="item-software">
+                    <img src="images/content/about-1.png" alt="">
+                    <img src="images/content/about-5.png" alt="">
+                    <img src="images/content/about-4.png" alt="">
+                    
+                </div>
+                <div class="item__imgages">
+                    <img src="images/portfolio/site/daniel3.jpg" alt="">
+                    <img src="images/portfolio/site/daniel1.jpg" alt="">
+                    <img src="images/portfolio/site/daniel2.jpg" alt="">
+                    <img src="images/portfolio/site/daniel.jpg" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="img-wrap">
+                <div class="" style="background-image: url(images/content/daniel-before.png);"></div>
+            </div>
+            
+        </div>
+		
+		<div id="item-20" class="item-page data-item-20" >
+            <div class="item ">
+                <div class="details-img">
+                    <img class="item-img" src="images/content/the_burrow.png" alt="">
+                </div>
+                <h3 class="item__title">
+                    The Burrow
+                </h3>
+                <div class="item__text">
+                    A stylized version of The Burrow — Weasley's home from Harry Potter movie
+                </div>
+                  <div class="item-software">
+                    <img src="images/content/about-1.png" alt="">
+                    <img src="images/content/about-3.png" alt="">
+                    <img src="images/content/image-1.png" alt="">
+                    
+                </div>
+                <div class="item__imgages">
+                    <img src="images/portfolio/site/burrow1.jpg" alt="">
+                    <img src="images/portfolio/site/burrow2.jpg" alt="">
+                    <img src="images/portfolio/site/burrow3.jpg" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+            
+            <div class="img-wrap">
+                <div class="" style="background-image: url(images/content/burrow-before.png);"></div>
+            </div>
+            
         </div>
 		<div id="item-three" class="item-page">
 			<div class="item">
