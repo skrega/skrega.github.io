@@ -273,17 +273,13 @@ $(function(){
 		burst8.replay();
 	});
 	//mojs end
-	
-
-    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-	observer.observe();
 });
 
 $(window).on('load', function () {
 	$('#loading').delay(500).fadeToggle(500);
-  });
+});
   
-
+ 
 // $(window).on('load', function () {
 //     var $preloader = $('#loading'),
 //         $svg_anm   = $preloader.find('.loading-center');
