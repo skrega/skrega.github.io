@@ -5,13 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Game Development</title>
 
-	<link rel="stylesheet" href="libs/slick-slider/slick.css">
-	<link rel="stylesheet" href="libs/animate-css/animate.min.css">
-	<link rel="stylesheet" href="libs/fullpage/fullpage.css">
-	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" rel="preload" href="libs/slick-slider/slick.css">
+	<link rel="stylesheet" rel="preload" href="libs/animate-css/animate.min.css">
+	<link rel="stylesheet" rel="preload" href="libs/fullpage/fullpage.css">
+	<link rel="stylesheet" rel="preload" href="libs/swiper/swiper.min.css">
 	<link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
-	
-
 	<link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
 	<style>
@@ -90,8 +88,8 @@
 							<span>contact us</span>
 						</a>
 					</div>
-					<div class="main__wrapper-img lozad" style="background-image: url(images/design/index-main.png);"></div>		  
-					<img class="mobile__img lozad" src="images/design/index-main-mobile.png" alt="">				  
+					<div class="main__wrapper-img" style="background-image: url(images/design/index-main.png);"  loading="lazy"></div>		  
+					<img class="mobile__img" src="images/design/index-main-mobile.png"  loading="lazy" alt="">				  
 				</div>
 				<a href="#portfolio" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow" data-anchor="slide2"><img src="images/arrows.png" alt=""></a>
 			</div>
@@ -100,7 +98,7 @@
 			<div class="container">
 				<div class="header-section">
 					<a href="#firstPage" class="header-logo">
-						<img src="images/logo-1.png" alt="" class="lozad">
+						<img src="images/logo-1.png" alt="" loading="lazy">
 						<span>Games</span>
 					</a>
 					<div class="menu-wrapper">
@@ -122,7 +120,7 @@
 						<div class="swiper-slide ">
 							<div class="slider-card slide-1">
 								<a data-fancybox href="javascript:;"  data-src="#item-fourth" class="slider__img">
-									<img src="images/item-1.png" alt="" class="lozad">
+									<img src="images/item-1.png" alt=""  loading="lazy">
 								</a>
 								<div class="slider__title">
 									Captain metal
@@ -139,7 +137,7 @@
 						<div class="swiper-slide">
 							<div class="slider-card slide-2">
 								<a data-fancybox href="javascript:;"  data-src="#item-22" class="slider__img">
-									<img src="images/content/winry.png" alt="" class="lozad">
+									<img src="images/content/winry.png" alt=""  loading="lazy">
 								</a>
 								<div class="slider__title">
 									Winry Rockbell
@@ -155,7 +153,7 @@
 						<div class="swiper-slide">
 							<div class="slider-card slide-3">
 								<a data-fancybox href="javascript:;" data-src="#item-20" href="#" class="slider__img">
-									<img src="images/content/the_burrow.png" alt="" class="lozad">
+									<img src="images/content/the_burrow.png" alt=""  loading="lazy">
 								</a>
 								<div class="slider__title">
 									The Burrow
@@ -171,7 +169,7 @@
 						<div class="swiper-slide ">
 							<div class="slider-card slide-4">
 								<a href="javascript:;" data-src="#item-6" data-fancybox class="slider__img">
-									<img src="images/tank.png" alt="" class="lozad">
+									<img src="images/tank.png" alt="" loading="lazy">
 								</a>
 								<div class="slider__title">
 									BT-42
@@ -187,7 +185,7 @@
 						<div class="swiper-slide ">
 							<div class="slider-card slide-5">
 								<a href="javascript:;" data-src="#item-three" data-fancybox class="slider__img">
-									<img src="images/content/robot-big.png" alt="" class="lozad">
+									<img src="images/content/robot-big.png" alt=""  loading="lazy">
 								</a>
 								<div class="slider__title">
 									Lamp Bulb Robot
@@ -253,16 +251,16 @@
 						<div class="about__software">
 							<span>software us:</span>
 							<ul class="about__list">
-								<li><img src="images/content/about-1.png" alt="" class="lozad"></li>
-								<li><img src="images/content/about-8.png" alt="" class="lozad"></li>
-								<li><img src="images/content/about-4.png" alt="" class="lozad"></li>
-								<li><img src="images/content/about-2.png" alt="" class="lozad"></li>
-								<li><img src="images/content/about-9.png" alt="" class="lozad"></li>
-								<li><img src="images/content/about-6.png" alt="" class="lozad"></li>
-								<li><img class="substance-painter" src="images/content/about-3.png" alt="" class="lozad"></li>
-								<li><img class="substance-disigner" src="images/content/about-5.png" alt="" class="lozad"></li>
-								<li><img src="images/content/about-10.png" alt="" class="lozad"></li>
-								<li><img src="images/content/about-7.png" alt="" class="lozad"></li>
+								<li><img src="images/content/about-1.png" alt=""  loading="lazy"></li>
+								<li><img src="images/content/about-8.png" alt=""  loading="lazy"></li>
+								<li><img src="images/content/about-4.png" alt=""  loading="lazy"></li>
+								<li><img src="images/content/about-2.png" alt=""  loading="lazy"></li>
+								<li><img src="images/content/about-9.png" alt=""  loading="lazy"></li>
+								<li><img src="images/content/about-6.png" alt=""  loading="lazy"></li>
+								<li><img class="substance-painter" src="images/content/about-3.png" alt=""  loading="lazy"></li>
+								<li><img class="substance-disigner" src="images/content/about-5.png" alt=""  loading="lazy"></li>
+								<li><img src="images/content/about-10.png" alt=""  loading="lazy"></li>
+								<li><img src="images/content/about-7.png" alt=""  loading="lazy"></li>
 							</ul>
 						</div>
 						<a data-fancybox data-src="#contact-form"href="javascript:;" class="button about-btn">
@@ -280,7 +278,7 @@
 					</div>
 					<img class="robot-img__mobile lozad" src="images/robot__mobile-about.png" alt="">
 				</div>
-				<img class="robot-img lozad" src="images/robot-about.png" alt="">
+				<img class="robot-img" src="images/robot-about.png" alt=""  loading="lazy">
 				<a href="#fourthPage"  data-anchor="fourthPage" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow"><img src="images/arrows.png" alt=""></a>
 			</div>
 		</section>
@@ -288,7 +286,7 @@
 			<div class="container">
 				<div class="header-section">
 					<a href="#firstPage" class="header-logo">
-						<img src="images/logo-1.png" alt="" class="lozad">
+						<img src="images/logo-1.png" alt=""  loading="lazy">
 						<span>Games</span>
 					</a>
 					<div class="menu-wrapper">
@@ -309,7 +307,7 @@
 					<div class="team__item">
 						<div class="team__inner">
 							<div class="team__user">
-								<img src="images/user-1.jpg" alt="" class="lozad">
+								<img src="images/user-1.jpg" alt=""  loading="lazy">
 							</div>
 							<div class="team__info">
 								<div class="team__name">
@@ -330,7 +328,7 @@
 					<div class="team__item">
 						<div class="team__inner">
 							<div class="team__user">
-								<img src="images/user-2.jpg" alt="" class="lozad">
+								<img src="images/user-2.jpg" alt=""  loading="lazy">
 							</div>
 							<div class="team__info">
 								<div class="team__name">
@@ -349,7 +347,7 @@
 					<div class="team__item">
 						<div class="team__inner">
 							<div class="team__user">
-								<img src="images/user-3.jpg" alt="" class="lozad">
+								<img src="images/user-3.jpg" alt=""  loading="lazy">
 							</div>
 							<div class="team__info">
 								<div class="team__name">
@@ -368,7 +366,7 @@
 					<div class="team__item">
 						<div class="team__inner">
 							<div class="team__user">
-								<img src="images/user-4.jpeg" alt="" class="lozad">
+								<img src="images/user-4.jpeg" alt="" loading="lazy">
 							</div>
 							<div class="team__info">
 								<div class="team__name">
@@ -394,7 +392,7 @@
 			<div class="container">
 				<div class="header-section">
 					<a href="#firstPage" class="header-logo">
-						<img src="images/logo-1.png" alt="" class="lozad">
+						<img src="images/logo-1.png" alt=""  loading="lazy">
 						<span>Games</span>
 					</a>
 					<div class="menu-wrapper">
