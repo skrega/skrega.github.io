@@ -275,9 +275,11 @@ $(function(){
 	//mojs end
 });
 
-$(window).on('load', function () {
-	$('#loading').delay(500).fadeToggle(500);
-});
+$('#loading').delay(2000).fadeOut();
+
+// $(window).on('load', function () {
+// 	$('#loading').delay(500).fadeToggle(500);
+// });
   
  
 // $(window).on('load', function () {
