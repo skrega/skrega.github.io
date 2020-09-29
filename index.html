@@ -3,22 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Cache-Control" content="no-cache"> 
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">	
 	<title>Game Development</title>
-
-	<link rel="stylesheet" rel="preload" href="libs/slick-slider/slick.css">
-	<link rel="stylesheet" rel="preload" href="libs/animate-css/animate.min.css">
-	<link rel="stylesheet" rel="preload" href="libs/fullpage/fullpage.css">
-	<link rel="stylesheet" rel="preload" href="libs/swiper/swiper.min.css">
-	<link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="libs/fullpage/fullpage.css">
+	<link rel="stylesheet" href="libs/slick-slider/slick.css" rel="preload">
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css" rel="preload">
 	<link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/normalize.css">
 	<style>
 		@media (min-width: 630px) {
 			.swiper-slide.swiper-slide-active .slider-card.slide-2 img {
 				width: 61%;
 				height: 161%;
 				bottom: 6px;
-				right: 109px;
+				right: 99px;
 			}
 			.swiper-slide.swiper-slide-active .slider-card.slide-3 img {
 				width: 54%;
@@ -51,7 +51,7 @@
 			<div class="container">
 				<div class="header__inner">
 					<a href="#" class="header-logo">
-						<img src="images/logo-1.png" alt="">
+						<img src="images/logo-1.png" alt="" loading="lazy">
 						<span>Games</span>
 					</a>
 					<nav class="header__menu">
@@ -91,7 +91,7 @@
 					<div class="main__wrapper-img" style="background-image: url(images/design/index-main.png);"  loading="lazy"></div>		  
 					<img class="mobile__img" src="images/design/index-main-mobile.png"  loading="lazy" alt="">				  
 				</div>
-				<a href="#portfolio" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow" data-anchor="slide2"><img src="images/arrows.png" alt=""></a>
+				<a href="#portfolio" class="arrows" data-anchor="slide2"><img src="images/arrows.png" alt=""></a>
 			</div>
 		</header>
 		<section id="portfolio" class="portfolio section">
@@ -219,7 +219,7 @@
 					<div class="swiper-button-next"></div>
 				</div>
 				<a href="page-portfolio.html" class="portfolio__link link">see all</a>
-				<a href="#thirdPage"  data-anchor="thirdPage" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow"><img src="images/arrows.png" alt=""></a>
+				<a href="#thirdPage"  data-anchor="thirdPage" class="arrows"><img src="images/arrows.png" alt=""></a>
 			</div>
 		</section>
 		<section id="about" class="about section">
@@ -293,8 +293,11 @@
 					</div>
 					<img class="robot-img__mobile lozad" src="images/robot__mobile-about.png" alt="">
 				</div>
-				<img class="robot-img" src="images/robot-about.png" alt=""  loading="lazy">
-				<a href="#fourthPage"  data-anchor="fourthPage" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow"><img src="images/arrows.png" alt=""></a>
+				<picture>
+					<source type="images/webp" srcset="images/content/robot-about.webp 1x">
+					<img class="robot-img" src="images/robot-about.png" alt=""  loading="lazy">
+				</picture>
+				<a href="#fourthPage"  data-anchor="fourthPage" class="arrows"><img src="images/arrows.png" alt=""></a>
 			</div>
 		</section>
 		<section class="team section">
@@ -323,7 +326,7 @@
 						<div class="team__inner">
 							<div class="team__user">
 								<picture>
-									<source type="images/webp" srcset="images/user-1.webp 1x">
+									<source type="images/webp" srcset="images/user-1.webp">
 									<img src="images/user-1.jpg" alt=""  loading="lazy">
 								</picture>
 							</div>
@@ -347,7 +350,7 @@
 						<div class="team__inner">
 							<div class="team__user">
 								<picture>
-									<source type="images/webp" srcset="images/user-2.webp 1x">
+									<source type="images/webp" srcset="images/user-2.webp">
 									<img src="images/user-2.jpg" alt=""  loading="lazy">
 								</picture>								
 							</div>
@@ -369,7 +372,7 @@
 						<div class="team__inner">
 							<div class="team__user">
 								<picture>
-									<source type="images/webp" srcset="images/user-3.webp 1x">
+									<source type="images/webp" srcset="images/user-3.webp">
 									<img src="images/user-3.jpg" alt=""  loading="lazy">
 								</picture>
 							</div>
@@ -391,7 +394,7 @@
 						<div class="team__inner">
 							<div class="team__user">
 								<picture>
-									<source type="images/webp" srcset="images/user-4.webp 1x">
+									<source type="images/webp" srcset="images/user-4.webp">
 									<img src="images/user-4.jpeg" alt="" loading="lazy">
 								</picture>
 								
@@ -412,7 +415,7 @@
 				
 				</div>
 			</div>
-			<a href="#fivePage" data-anchor="fivePage" class="arrows animate__animated animate__fadeInDown animate__infinite animate__slow" data-anchor="slide2">
+			<a href="#fivePage" data-anchor="fivePage" class="arrows" data-anchor="slide2">
 				<img src="images/arrows.png" alt="">
 			</a>
 		</section>
@@ -453,7 +456,7 @@
 							</div>
 							<div class="information__link-social">
 								<a href="https://www.instagram.com/wellplayed_games/" class="icon-instagram"></a>
-								<a href="#" class="icon-facebook"></a>
+								<a href="https://www.facebook.com/WPlayedGames" class="icon-facebook"></a>
 							</div>
 						</div>
 					</div>
@@ -662,7 +665,7 @@
 		<div id="item-22" class="item-page data-item-22">
             <div class="item ">
                 <div class="details-img">
-                    <img class="item-img" src="images/content/winry.png" alt="" >
+                    <img class="item-img" src="images/content/winry.png" alt="" loading="lazy">
                 </div>
                 <h3 class="item__title">
                     Winry Rockbell
@@ -776,14 +779,14 @@
 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script data-src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
-	<script data-src="libs/fancybox-master/jquery.fancybox.min.js"></script>
-	<script data-src="libs/swiper/swiper.min.js"></script>
-	<script data-src="libs/fullpage/easings.min.js"></script>
-	<script data-src="libs/fullpage/scrolloverflow.min.js"></script>
-	<script data-src="libs/slick-slider/slick.min.js"></script>
-	<script data-src="libs/fullpage/fullpage.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js" defer></script>
+	<script src="libs/fancybox-master/jquery.fancybox.min.js" defer></script>
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/easings.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js" defer></script>
+	<script src="libs/slick-slider/slick.min.js" defer></script>
+	<script src="libs/fullpage/fullpage.min.js" defer></script>
+	<script src="js/main.min.js"></script>
 	<script src="js/mail.js"></script>
 </body>
 </html>
